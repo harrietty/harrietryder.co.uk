@@ -1,0 +1,70 @@
+.myFace {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.welcomeSection, .speakingSection {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.welcomeSection p {
+  padding: 20px;
+}
+
+.postDate {
+  font-size: 0.7em;
+  margin-left: 10px;
+  color: #464747;
+  font-weight: 100;
+}
+
+.speakingImg {
+  width: 350px;
+  margin-right: 14px;
+  border-radius: 6px;
+}
+
+.speakingImgRight {
+  width: 350px;
+  margin-left: 14px;
+  border-radius: 6px;
+}
+
+span.stronger {
+  font-weight: 600;
+}
+
+.speakingSection {
+  padding-top: 19px;
+}
+
+@media only screen and (max-width: 750px) {
+  .welcomeSection {
+    display: block;
+    text-align: center;
+  }
+  .welcomeSection img {
+    display: block;
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .speakingSection {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .speakingSection p {
+    order: 1;
+  }
+
+  .speakingSection img {
+    margin-bottom: 10px;
+    width: 80%;
+  }
+}
