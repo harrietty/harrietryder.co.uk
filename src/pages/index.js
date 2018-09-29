@@ -1,5 +1,5 @@
 import React from 'react'
-import {Link} from 'gatsby';
+import {Link, graphql} from 'gatsby';
 import Layout from '../components/layout';
 import myFace from '../img/face2.png';
 import codebar from '../img/1.jpg';
@@ -31,7 +31,7 @@ const IndexPage = ({data}) => {
               <ul>
                 {data.blogposts.edges.map((p, i) => (
                   <li key={i}>
-                    <Link to={p.node.frontmatter.title} key={i}>{p.node.frontmatter.title}</Link>
+                    <Link to={p.node.fields.slug} key={i}>{p.node.frontmatter.title}</Link>
                     <span className='postDate'>({p.node.frontmatter.date})</span>
                   </li>
                 ))}
@@ -44,7 +44,7 @@ const IndexPage = ({data}) => {
               <ul>
                 {data.talks.edges.map((t, i) => (
                   <li key={i}>
-                    <Link to={t.node.frontmatter.title} key={i}>{t.node.frontmatter.title}</Link>
+                    <Link to={t.node.fields.slug} key={i}>{t.node.frontmatter.title}</Link>
                     <p>
                       {t.node.frontmatter.description}
                     </p>
@@ -133,6 +133,9 @@ query {
     sort: {fields: [frontmatter___date], order: DESC}) {
     edges {
       node {
+        fields {
+          slug
+        }
         frontmatter {
           title
           date(formatString: "Do MMM, YYYY")
@@ -145,6 +148,9 @@ query {
   ) {
     edges {
       node {
+        fields {
+          slug
+        }
         frontmatter {
           title
           description
