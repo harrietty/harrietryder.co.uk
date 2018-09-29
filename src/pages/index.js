@@ -42,12 +42,14 @@ const IndexPage = ({data}) => {
             <section>
               <h3>talks</h3>
               <ul>
-                {/* {talks.map((t, i) => (
+                {data.talks.edges.map((t, i) => (
                   <li key={i}>
-                    
-                    <Link to={t.node.fields.slug} key={i}>{t.node.frontmatter.title}</Link>
-                </li>
-                ))} */}
+                    <Link to={t.node.frontmatter.title} key={i}>{t.node.frontmatter.title}</Link>
+                    <p>
+                      {t.node.frontmatter.description}
+                    </p>
+                  </li>
+                ))}
               </ul>
             </section>
 
