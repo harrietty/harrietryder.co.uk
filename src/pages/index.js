@@ -7,16 +7,9 @@ import cfg from '../img/3.jpg';
 import cfg2 from '../img/2.jpg';
 import randomTalks from '../img/6.jpg';
 import nc from '../img/5.jpg';
-// import git from '../img/whats-in-git.png';
-
-// const talksImages = {
-//   'whats-in-git.png': git,
-// };
-
 import './index.css';
 
 const IndexPage = ({data}) => {
-  console.log(data);
   return (
     <Layout>
       <div className='container-fluid'>

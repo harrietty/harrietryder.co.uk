@@ -10,7 +10,7 @@ export default function BlogHomepage({ data }) {
         <h4>All Blog Posts:</h4>
         {posts.map(({ node }, i) => {
           return (
-            <p>
+            <p key={i}>
               <Link to={node.fields.slug}>{node.frontmatter.title}</Link>
               <span className='postDate'>({node.frontmatter.date})</span>
             </p>
@@ -35,7 +35,6 @@ export const query = graphql`
           frontmatter {
             title
             date(formatString: "Do MMM, YYYY")
-            tags
           }
         }
       }
