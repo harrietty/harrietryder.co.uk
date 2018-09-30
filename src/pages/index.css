@@ -41,6 +41,26 @@ span.stronger {
   padding-top: 19px;
 }
 
+.talksList {
+  list-style-type: none;
+}
+
+.talksList li {
+  margin-bottom: 50px;
+}
+
+.talkLinkSection {
+  text-align: center;
+}
+
+.talkLinkSection img {
+  max-width: 80%;
+}
+
+.talksList p {
+  text-align: center;
+}
+
 @media only screen and (max-width: 750px) {
   .welcomeSection {
     display: block;

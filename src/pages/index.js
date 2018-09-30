@@ -7,10 +7,16 @@ import cfg from '../img/3.jpg';
 import cfg2 from '../img/2.jpg';
 import randomTalks from '../img/6.jpg';
 import nc from '../img/5.jpg';
+// import git from '../img/whats-in-git.png';
+
+// const talksImages = {
+//   'whats-in-git.png': git,
+// };
 
 import './index.css';
 
 const IndexPage = ({data}) => {
+  console.log(data);
   return (
     <Layout>
       <div className='container-fluid'>
@@ -41,10 +47,15 @@ const IndexPage = ({data}) => {
 
             <section>
               <h3>talks</h3>
-              <ul>
+              <ul className='talksList'>
                 {data.talks.edges.map((t, i) => (
                   <li key={i}>
-                    <Link to={t.node.fields.slug} key={i}>{t.node.frontmatter.title}</Link>
+                    <Link to={t.node.fields.slug} key={i}>
+                      <div className='talkLinkSection'>
+                        <h4>{t.node.frontmatter.title}</h4>
+                        <img src={t.node.frontmatter.frontimage}></img>
+                      </div>
+                    </Link>
                     <p>
                       {t.node.frontmatter.description}
                     </p>

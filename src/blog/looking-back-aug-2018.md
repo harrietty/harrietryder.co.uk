@@ -45,9 +45,6 @@ I was proud of myself this month because I started feeling an Achilles tendon in
 
 It's been another great month at work - I really love the job I do, which is nice for me but makes for boring conversation because there's nothing to gripe and moan about! We've started using React in a semi-experimental way, which is pretty cool, because it's a lovely technology to develop in and will really help us on the front end which is in need of some sort of framework to stop it soon becomming unwieldy.
 
-Yeah, not much to say here. Like I said, nothing to complain about.
-
-
 ##### Side Stuff
 
 Chachara is the working name of my side project, an app for practicing speaking in a foreign language. I think I will begin writing about my side project in separate blog posts because I'd like to document my progress on it month by month, but for now let's just say it took a back seat during August because we were so busy with the house move, but I'm going to get back on with it now that I've got a DESK AT HOME! 🎉🎉🎉
