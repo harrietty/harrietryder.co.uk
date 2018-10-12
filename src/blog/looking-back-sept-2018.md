@@ -14,6 +14,8 @@ On the 8th of September we celebrated a month in our new little home. Well, we d
 
 We also ordered an organic vegetable box which arrives every Wednesday and is honestly the highlight of my week. It is so exciting to come home and discover what variety of potatoes have been bequeathed to you this week. My favourite item so far has been a glorious Romanesco cauliflower which we made into a delicious gnocci, which was so good I definitely didn't get any pictures of it.
 
+![Veg box](sept2018/veg.png)
+
 
 ##### Revisiting Northcoders
 

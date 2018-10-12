@@ -1,3 +1,16 @@
 h5 {
   margin-top: 30px;
 }
+
+code {
+  color: lightcoral !important;
+  word-break: break-word;
+  padding: 0 8px;
+  background: darkslategray;
+}
+
+pre {
+  background: darkslategray;
+  color: lightcoral !important;
+  padding: 10px;
+}
