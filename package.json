@@ -4,9 +4,9 @@
   "license": "MIT",
   "scripts": {
     "develop": "gatsby develop",
-    "build": "gatsby build",
+    "build": "gatsby build --prefix-paths",
     "serve": "gatsby serve",
-    "deploy": "gatsby build --prefix-paths && s3-deploy './public/**' --cwd './public/' --region eu-west-1 --bucket harrietryderblog  --deleteRemoved --gzip"
+    "deploy": "s3-deploy './public/**' --cwd './public/' --region eu-west-1 --bucket harrietryderblog  --deleteRemoved --gzip"
   },
   "dependencies": {
     "gatsby": "^2.0.0",
