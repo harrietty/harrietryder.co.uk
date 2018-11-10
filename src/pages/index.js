@@ -7,7 +7,7 @@ import cfg from '../img/3.jpg';
 import cfg2 from '../img/2.jpg';
 import randomTalks from '../img/6.jpg';
 import talk from '../img/talk.jpg';
-import teaching from '../img/teaching2.png';
+import teaching from '../img/codebar.png';
 import nc from '../img/5.jpg';
 import './index.css';
 
@@ -99,7 +99,7 @@ const IndexPage = ({data}) => {
               <div className='speakingSection'>
                 <img src={nc} className='speakingImg' alt="Me and the Northcoders team" />
                 <p>
-                  At <a href='https://northcoders.com/' target='_blank' rel="noopener noreferrer">Northcoders</a> (the UK's top bootcamp for graduate outcomes <span role='img' aria-label='geeky face'>🤓</span>) I taught full-stack JavaScript to complete beginners through to job-ready level. I also helped develop the curriculum and ran numerous taster sessions, introductory classes and study groups. I produced 100s of hours of video content to support our part-time students, realised how much I use the word "so...", and became less of a fan of my own voice/face.
+                  At <a href='https://northcoders.com/' target='_blank' rel="noopener noreferrer">Northcoders</a> (the UK's top bootcamp for graduate outcomes <span role='img' aria-label='geeky face'>🤓</span>) I taught full-stack JavaScript to complete beginners through to job-ready level. I developed and delivered the part-time curriculum which ran for 9 months, and also ran numerous taster sessions, introductory courses and study groups.
                 </p>
               </div>
               
@@ -116,13 +116,13 @@ const IndexPage = ({data}) => {
               </div>
 
               <div className='speakingSection'>
-                <p>I gave an <span className='stronger'>Introduction to JavaScript</span> workshop at the <a href='https://www.codefirstgirls.org.uk/northern-conference-2018.html' target='_blank' rel="noopener noreferrer">CodeFirst:Girls 2018 Northern Conference</a>. Thank you for having me! More like this please <span role='img' aria-label='praying hands'>🙏</span></p>
+                <p>I gave an <span className='stronger'>Introduction to JavaScript</span> workshop at the <a href='https://www.codefirstgirls.org.uk/northern-conference-2018.html' target='_blank' rel="noopener noreferrer">CodeFirst:Girls 2018 Northern Conference</a>. Thank you for having me! More like this please <span role='img' aria-label='praying hands'>🙏</span> I am also currently teaching and mentoring on the <a href='https://www.codefirstgirls.org.uk/free-community-courses.html' target='_blank' rel="noopener noreferrer">Ruby CFG General Course</a> in Manchester</p>
                 <img src={cfg} className='speakingImgRight' alt="Giving an Intro to JavaSript workshop" />
               </div>
 
               <div className='speakingSection'>
                 <img src={talk} className='speakingImg' alt="Giving a lightning talk" />
-                <p>Whenever I can I mentor at <a href='http://railsgirls.com/' target='_blank' rel="noopener noreferrer">Rails Girls</a> and once gave a lightning talk on <span className='stronger'>The Weird World of Programming Languages</span>. (I also used to have pretty cool hair)</p>
+                <p>I mentor at <a href='http://railsgirls.com/' target='_blank' rel="noopener noreferrer">Rails Girls</a> and once gave a lightning talk on <span className='stronger'>The Weird World of Programming Languages</span>. (I also used to have pretty cool hair)</p>
               </div>
               
               <div className='speakingSection'>
