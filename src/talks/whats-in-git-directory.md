@@ -64,7 +64,7 @@ Let's start off with a file that actually does have something in it at this poin
 
 If you take a look at the contents of HEAD,  you can see that the HEAD file seems to contain a reference to another file.
 
-![HEAD](git-dir/3.png)
+![The HEAD file](git-dir/3.png)
 
 But if you actually try and follow that reference and look at `.git/refs/heads/master` the file doesn’t exist. Let’s make a commit and see what changes.
 
@@ -78,14 +78,14 @@ What is this long string? Well, it's actually the hash of the commit that you ju
 
 Before we go any further, here's a diagram of the files and directories we've explored so far:
 
-![Head file](git-dir/headfile.png)
+![A diagram of the files and directories we've explored so far](git-dir/headfile.png)
 
 
 ### A very quick introduction to hashes
 
 In this context, a hash means a digest of characters which is produced by running content through an algorithm. However long this content is, the algorithm will spit out a hash of a determined length. The algorithm means that the same content fed through the algorithm twice will ALWAYS produce the same sequence of characters, and if the algorithm is secure then it should be impossible to take the digest of characters and decipher the original message.
 
-![Hashing function](git-dir/hashing.png)
+![A hashing function](git-dir/hashing.png)
 
 The algorithm Git uses isn’t secure any more because people have figured out how it transforms characters from one string into another. However, that doesn’t matter in this context because Git is not using a hash for cryptographic reasons. It uses a hash to represent data because it helps *verify* the contents of that data, making it very hard for someone to change the underlying data without the hash changing, and also because hashes provide a handy, unique, and shorthand way to refer to the pieces of data that Git’s storing (more on that in a moment).
 

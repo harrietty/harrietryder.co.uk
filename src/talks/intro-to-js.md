@@ -123,19 +123,19 @@ JavaScript Quirk! JavaScript has 2 ways of comparing values, strict and non-stri
 
 ##### Branching logic.
 
-![Boolean logic](./intro-to-js/17.png)
+![Branching logic](./intro-to-js/17.png)
 
 This means taking different directions, usually based on a comparison or evaluation that has been made. Either do one thing or another. If we couldn’t branch our logic we’d have extremely limited applications, they would always do the same thing!
 
 ##### Functions
 
-![Boolean logic](./intro-to-js/18.png)
+![Functions](./intro-to-js/18.png)
 
 Functions allow us to create reusable sequences that can be run whenever we want. Functions are like recipes. We start by writing a recipe for adding VAT to a purchase, for example, where the placeholder variable ‘price’ is standing in for the actual price. We can then perform that recipe, or function, whenever we want by passing it an actual price to use.
 
 ##### Loops
 
-![Boolean logic](./intro-to-js/19.png)
+![Loops](./intro-to-js/19.png)
 
 One of the great things about computers is that they can do the same thing a million times without getting bored, and they can do it very quickly too. Like all languages, JavaScript offers us a way of doing something a set number of times... or until a certain condition is met
 
@@ -145,7 +145,7 @@ So finally, should you take the plunge and learn JavaScript?
 
 If I haven't convinced you yet, here are a few final reasons:
 
-![Boolean logic](./intro-to-js/20.png)
+![More reasons to love JavaScript](./intro-to-js/20.png)
 
 
 ⭐ JavaScript is a forgiving language, it doesn’t have as many rules as some other languages so it’s just that little bit easier to get started with without making so many mistakes

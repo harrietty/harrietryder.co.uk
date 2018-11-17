@@ -3,14 +3,14 @@ h5 {
 }
 
 code {
-  color: lightcoral !important;
+  color: sandybrown !important;
   word-break: break-word;
-  padding: 0 8px;
+  padding: 7px;
   background: darkslategray;
 }
 
 pre {
   background: darkslategray;
-  color: lightcoral !important;
+  color: sandybrown !important;
   padding: 10px;
 }
