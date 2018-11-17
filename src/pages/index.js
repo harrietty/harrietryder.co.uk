@@ -22,7 +22,7 @@ const IndexPage = ({data}) => {
               <div className="welcomeSection">
                 <img src={myFace} className="myFace" alt="My Face" />
                 <p>
-                  Software engineer, language nerd, reader, learner, runner, plant mother. Originally an arts graduate and librarian, I've been writing about my journey into tech (and other things) for a couple of years.
+                  Software developer, language nerd, reader, learner, runner, plant mother. Originally an arts graduate and librarian, I've been writing about my journey into tech (and other things) for a couple of years.
                 </p>
               </div>
             </section>

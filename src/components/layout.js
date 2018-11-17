@@ -88,6 +88,11 @@ const TemplateWrapper = ({children}) => (
         ]}
         meta={[
           {
+            name: 'viewport',
+            content: 'width=device-width',
+            'initial-scale': '1.0'
+          },
+          {
             name: "description",
             content: "Personal blog and portfolio of Harriet Ryder"
           },
