@@ -4,7 +4,6 @@ import Layout from '../components/layout';
 import myFace from '../img/face2.png';
 import codebar from '../img/1.jpg';
 import cfg from '../img/3.jpg';
-import cfg2 from '../img/2.jpg';
 import randomTalks from '../img/6.jpg';
 import talk from '../img/talk.jpg';
 import teaching from '../img/codebar.png';
@@ -48,7 +47,7 @@ const IndexPage = ({data}) => {
                     <Link to={t.node.fields.slug} key={i}>
                       <div className='talkLinkSection'>
                         <h4>{t.node.frontmatter.title}</h4>
-                        <img src={t.node.frontmatter.frontimage}></img>
+                        <img src={t.node.frontmatter.frontimage} alt="Title of talk"></img>
                       </div>
                     </Link>
                     <p>

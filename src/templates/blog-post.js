@@ -6,7 +6,7 @@ import './blog-post.css';
 
 export default function BlogPost ({data}) {
   const {html} = data.markdownRemark;
-  const {tags, title, date, description} = data.markdownRemark.frontmatter;
+  const {title, date, description} = data.markdownRemark.frontmatter;
   return (
     <Layout>
       <div id='blogArea'>
