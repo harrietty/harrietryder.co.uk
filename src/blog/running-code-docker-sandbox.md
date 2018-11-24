@@ -42,14 +42,14 @@ I first created a simple Docker image from a Dockerfile like this:
 ```
 FROM alpine:3.8
 RUN apk add --no-cache bash gawk sed grep bc coreutils
-CMD ["./tests.sh"]
+CMD ["/tests.sh"]
 ```
 
 Apline is a lightweight Unix operating system which is all we need, just something quick to spin up in a container.
 
 The second line uses `apk` (Apline's package manager) to install bash and some other command line utilities which the user might need to use. (Well, they certainly need bash if they're going to be writing bash scripts!)
 
-Finally we run a file called `tests.sh`, assuming that when the container is launched a file called `tests.sh` is copied onto the container (called **mounting** into the container).
+Finally we run a file called `tests.sh`, assuming that when the container is launched a file called `tests.sh` is copied available in the root of the container (called **mounting** into the container).
 
 To create a container, the **image** first needs to be built from the Dockerfile. Once you have an image you can run it as many times as you like to create new containers. The Dockerfile just lays out what components should be included in the container (i.e. what operating system), any files that should always be included, and any commands that should be executed when a container running this image is started.
 
@@ -61,9 +61,9 @@ You can see your built image in a list of all images you have available to run:
 
 We are not telling our Image to include the `tests.sh` file OR the user code because we don't know what code the user is going to submit at this point. We might know what tests we want to run, but I'm imagining a situation where the user could complete any one of multiple exercises. So we wouldn't know which exercise they were completing until we get a request from them to run some code, therefore we don't know which test files we'd need to run in our container.
 
-We could add **all** the test files to our Image, but that seems a bit unnecessary. We have another option for copying files to a container and that is called **mounting** which I mentioned earlier.
+We could add **all** the test files to our Image (which is actually something I did in a later refactor). But for now, I chose the option I mentioned earlier for making files available to a container - **mounting**.
 
-When we run a container, we can do use the `-v` option and mount a volume. This basically just means copying a folder or directory from the local machine to the Docker container. To run our image (which we called `test_runner`) and mount the user's code and a test file, we can run:
+When we run a container, we can do use the `-v` option and mount a volume. This basically just means making a folder or directory on the local machine available to the Docker container as though it has been copied to the container itself. To run our image (which we called `test_runner`) and mount the user's code and a test file, we can run:
 
 `$ docker run --rm -v $(pwd)/user_code.sh:/user_code.sh -v $(pwd)/tests.sh:/tests.sh test_runner`
 
@@ -72,7 +72,7 @@ The test file should execute the user's code and exit with a success exit code (
 ```shell
 #!/bin/bash
 
-res=$(./user_code.sh 5 10)
+res=$(/user_code.sh 5 10)
 
 if [[ $res -eq 15 ]]; then
   exit 0

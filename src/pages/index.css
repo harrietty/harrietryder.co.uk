@@ -87,3 +87,7 @@ span.stronger {
     width: 80%;
   }
 }
+
+pre code {
+  padding: 0;
+}
