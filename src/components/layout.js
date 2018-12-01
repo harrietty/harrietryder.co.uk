@@ -100,6 +100,22 @@ const TemplateWrapper = ({children}) => (
             name: "keywords",
             content:
               "coding, javascript, learning, ReactJS, React, Python, Ruby, Rails, Node, NodeJS, programming, software development"
+          },
+          {
+            name: "twitter:card",
+            content: "summary"
+          },
+          {
+            name: "twitter:creator",
+            content: "@harri_etty"
+          },
+          {
+            name: "twitter:title",
+            content: "Harriet Ryder | Blog | Website"
+          },
+          {
+            name: "twitter:image",
+            content: "http://www.harrietryder.co.uk/me.png"
           }
         ]}
         script={[

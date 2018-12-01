@@ -9,7 +9,7 @@
     "deploy": "s3-deploy './public/**' --cwd './public/' --region eu-west-1 --bucket harrietryderblog  --deleteRemoved --gzip"
   },
   "dependencies": {
-    "gatsby": "^2.0.0",
+    "gatsby": "2.0.59",
     "gatsby-plugin-react-helmet": "^3.0.0",
     "gatsby-plugin-sharp": "^2.0.5",
     "gatsby-remark-figure-caption": "^2.0.0",
