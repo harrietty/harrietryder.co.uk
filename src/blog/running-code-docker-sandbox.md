@@ -49,7 +49,7 @@ Apline is a lightweight Unix operating system which is all we need, just somethi
 
 The second line uses `apk` (Apline's package manager) to install bash and some other command line utilities which the user might need to use. (Well, they certainly need bash if they're going to be writing bash scripts!)
 
-Finally we run a file called `tests.sh`, assuming that when the container is launched a file called `tests.sh` is copied available in the root of the container (called **mounting** into the container).
+Finally we run a file called `tests.sh`, assuming that when the container is launched a file called `tests.sh` is made available in the root of the container (called **mounting** into the container).
 
 To create a container, the **image** first needs to be built from the Dockerfile. Once you have an image you can run it as many times as you like to create new containers. The Dockerfile just lays out what components should be included in the container (i.e. what operating system), any files that should always be included, and any commands that should be executed when a container running this image is started.
 
