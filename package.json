@@ -6,8 +6,7 @@
     "develop": "gatsby develop",
     "build": "gatsby build --prefix-paths",
     "serve": "gatsby serve",
-    "sync": "s3-deploy './public/**' --cwd './public/' --bucket harrietrydercouk-20181206184843-hostingbucket  --deleteRemoved --gzip && npm run clear",
-    "clear": "aws-cloudfront-invalidate E1HE2YRFXPLBQA"
+    "deploy": "gh-pages -d public"
   },
   "dependencies": {
     "aws-cloudfront-invalidate": "^0.1.3",
@@ -25,5 +24,7 @@
     "react-helmet": "^5.2.0",
     "s3-deploy": "^1.1.6"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "gh-pages": "^2.0.1"
+  }
 }
