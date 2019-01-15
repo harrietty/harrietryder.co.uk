@@ -36,7 +36,7 @@ Metric: 52 "pieces of content" by the end of the year
 
 Metric: 12 books read by the end of the year
 
-8. 💰 **Generate a side income** I want to develop a side project that delivers an income. No matter how small, I want to land on something that I can continue to work at in the future, something I that gives a bit of meaning/legitimacy to the work I do outside of work and excited me. This might be freelance stuff, or building an App with the intention of getting it in an app store. 
+8. 💰 **Generate a side income** I want to develop a side project that delivers an income. No matter how small, I want to land on something that I can continue to work at in the future, something I that gives a bit of meaning/legitimacy to the work I do outside of work and excites me. This might be freelance stuff, or building an App with the intention of getting it in an app store. 
 
 Metric: Make >£1 profit doing something outside of work
 
@@ -48,7 +48,7 @@ Metric: Be able to (if called upon) teach yoga to a small group of people
 
 Metric: Feel like practicing meditation brings a benefit
 
-11. 🐦 **Self-promote myself better** I feel like I publish quite a lot on the web bit I'm pretty rubbish at self promotion, so that's something I'd like to improve. Increasing followers seems like an easy metric to track. 
+11. 🐦 **Promote myself better** I feel like I publish quite a lot on the web but I'm pretty rubbish at self promotion, so that's something I'd like to improve. Increasing followers seems like an easy metric to track. 
 
 Metric: 1000 Twitter followers in total by the end of the year
 
@@ -60,7 +60,7 @@ And.... finally... the big one:
 
 This is something I've wanted to do, and have done on and off, for a long time. I think it's finally time. About 8 months ago I gave up coffee which I always thought would be harder than booze since I'm sure I genuinely was addicted to it, so if I can do that then I'm sure I can do this.
 
-My main strategy for the beginning to to avoid situations where I know I'll be tempted/pressured to drink.
+My main strategy for the beginning is to avoid situations where I know I'll be tempted/pressured to drink.
 
 After that I'll figure out better strategies for socialising in places and at events where drinking alcohol is encouraged.
 
