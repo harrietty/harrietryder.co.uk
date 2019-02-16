@@ -2,6 +2,7 @@
 title: 'How does RSpec work? Part 1: Blocks and Contexts'
 date: 2019-02-16
 tags: [code, howto, technical, tutorial, ruby, rspec]
+description: When I'm learning a new language, or trying to learn it more deeply, I love reimplementing common libraries. In this post, I take a look at RSpec, a library whose workings appear to make no sense, in an attempt to get to grips with Metaprogramming in Ruby!
 ---
 
 ![](rubies.jpg)

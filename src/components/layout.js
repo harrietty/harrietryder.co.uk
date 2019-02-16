@@ -55,93 +55,103 @@ class SocialBanner extends React.Component {
   }  
 };
 
-const TemplateWrapper = ({children}) => (
-  <StaticQuery
-    query={graphql`
-      query {
-        site {
-          siteMetadata {
-            title
+const Layout = ({children, meta}) => {
+  let twitterTitle = 'Harriet Ryder | Blog | Website';
+  let twitterDescription = ''
+  if (meta && meta.title) twitterTitle = meta.title;
+  if (meta && meta.description) twitterDescription = meta.description;
+  return (
+    <StaticQuery
+      query={graphql`
+        query {
+          site {
+            siteMetadata {
+              title
+            }
           }
         }
-      }
-    `}
-    render={data => (
-    <div>
-      <Helmet
-        title={data.site.siteMetadata.title}
-        link={[
-          { rel: 'shortcut icon', type: 'image/png', href: `${favicon}` },
-          {
-            rel: "stylesheet",
-            href:
-              "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css",
-            integrity:
-              "sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy",
-            crossorigin: "anonymous"
-          },
-          {
-            rel: "stylesheet",
-            href:
-              "https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"
-          }
-        ]}
-        meta={[
-          {
-            name: 'viewport',
-            content: 'width=device-width',
-            'initial-scale': '1.0'
-          },
-          {
-            name: "description",
-            content: "Personal blog and portfolio of Harriet Ryder"
-          },
-          {
-            name: "keywords",
-            content:
-              "coding, javascript, learning, ReactJS, React, Python, Ruby, Rails, Node, NodeJS, programming, software development"
-          },
-          {
-            name: "twitter:card",
-            content: "summary"
-          },
-          {
-            name: "twitter:creator",
-            content: "@harri_etty"
-          },
-          {
-            name: "twitter:title",
-            content: "Harriet Ryder | Blog | Website"
-          },
-          {
-            name: "twitter:image",
-            content: "http://www.harrietryder.co.uk/me.png"
-          }
-        ]}
-        script={[
-          {
-            src: "https://use.fontawesome.com/e835c50e09.js"
-          }
-        ]}
-      />
-      <Header title={data.site.siteMetadata.title} />
-      <SocialBanner />
-      <div
-        style={{
-          margin: "0 auto",
-          maxWidth: 960,
-          padding: "0px 1.0875rem 1.45rem",
-          paddingTop: 0
-        }}
-      >
-        {children}
+      `}
+      render={data => (
+      <div>
+        <Helmet
+          title={data.site.siteMetadata.title}
+          link={[
+            { rel: 'shortcut icon', type: 'image/png', href: `${favicon}` },
+            {
+              rel: "stylesheet",
+              href:
+                "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css",
+              integrity:
+                "sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy",
+              crossorigin: "anonymous"
+            },
+            {
+              rel: "stylesheet",
+              href:
+                "https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"
+            }
+          ]}
+          meta={[
+            {
+              name: 'viewport',
+              content: 'width=device-width',
+              'initial-scale': '1.0'
+            },
+            {
+              name: "description",
+              content: "Personal blog and portfolio of Harriet Ryder"
+            },
+            {
+              name: "keywords",
+              content:
+                "coding, javascript, learning, ReactJS, React, Python, Ruby, Rails, Node, NodeJS, programming, software development"
+            },
+            {
+              name: "twitter:card",
+              content: "summary"
+            },
+            {
+              name: "twitter:creator",
+              content: "@harri_etty"
+            },
+            {
+              name: "twitter:title",
+              content: twitterTitle,
+            },
+            {
+              name: "twitter:description",
+              content: twitterDescription,
+            },
+            {
+              name: "twitter:image",
+              content: "http://www.harrietryder.co.uk/me.png"
+            }
+          ]}
+          script={[
+            {
+              src: "https://use.fontawesome.com/e835c50e09.js"
+            }
+          ]}
+        />
+        <Header title={data.site.siteMetadata.title} />
+        <SocialBanner />
+        <div
+          style={{
+            margin: "0 auto",
+            maxWidth: 960,
+            padding: "0px 1.0875rem 1.45rem",
+            paddingTop: 0
+          }}
+        >
+          {children}
+        </div>
       </div>
-    </div>
-  )} />
-);
+    )} />
+  )
+};
 
-TemplateWrapper.propTypes = {
+Layout.propTypes = {
   children: PropTypes.object,
 };
 
-export default TemplateWrapper;
+export default Layout;
