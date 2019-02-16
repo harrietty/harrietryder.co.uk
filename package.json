@@ -6,8 +6,7 @@
     "develop": "gatsby develop",
     "build": "gatsby build --prefix-paths",
     "serve": "gatsby serve",
-    "deploy": "gh-pages -d public",
-    "deploys3": "aws s3 sync ./public s3://www.harrietryder.co.uk --delete",
+    "deploy": "aws s3 sync ./public s3://www.harrietryder.co.uk --delete",
     "clear": "aws-cloudfront-invalidate E23EK4WY752FT0"
   },
   "dependencies": {
