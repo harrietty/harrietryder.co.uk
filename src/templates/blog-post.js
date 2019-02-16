@@ -13,7 +13,6 @@ export default function BlogPost ({data}) {
         <div className='blogHeader'>
           <h1>{title}</h1>
           {date && <h6 className='blogDate'>Posted on: {date}</h6>}
-          {description && <h6 className='blogDate'>{description}</h6>}
         </div>
         <div dangerouslySetInnerHTML={{__html: html}} />
       </div>
