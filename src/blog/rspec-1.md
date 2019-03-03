@@ -77,7 +77,7 @@ Inside the class `FooSpec`, the context the code is running in is the context of
 
 Somewhat related to this concept of classes is the handy method `class_eval`.
 
-`class_eval` is a method available on a class, which allows you to execute code in the context of the class in question. For example, we can so something similar to what we did before:
+`class_eval` is a method available on a class, which allows you to execute code in the context of the class in question. For example, we can do something similar to what we did before:
 
 ```ruby
 class FooSpec
