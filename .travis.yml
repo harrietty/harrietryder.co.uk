@@ -6,6 +6,7 @@ branches:
 script:
   - npm run build
 deploy:
+  provider: script
   skip_cleanup: true
   script: npm run deploy
 after_deploy:
