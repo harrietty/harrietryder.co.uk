@@ -1,0 +1,11 @@
+language: node_js
+branches:
+  only:
+    - master
+script:
+  - npm run build
+deploy:
+  skip_cleanup: true
+  script: npm run deploy
+after_deploy:
+  script: npm run clear
