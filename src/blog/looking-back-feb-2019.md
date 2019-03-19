@@ -10,7 +10,7 @@ February was a strange month where, for a few days, I almost thought winter was 
 
 It seems like forever ago I was reflecting on January. At the end of January, I was chastising myself a little for taking on too much and filling up my diary with obligations and commitments, something I'm always far too tempted to do, and which I seem to not be able to moderate.
 
-Febrary was no different, although I've made an effort to be more conscious of what I'm saying yes to. I've started doing only the exercise that I really feel like doing, and not forcing myself to run every morning because it's the "right" thing to do. When my running bag I take running to work broke, I decided not to replace it and just enjoy cycling or walking instead. And when I received additional requests for mentees from <a href='https://mentorcruise.com' target='_blank'>MentorCruise</a> I decided to accept only one more applicant, who would filling a space left by a previous mentee who I now work with less regularly.
+Febrary was no different, although I've made an effort to be more conscious of what I'm saying yes to. I've started doing only the exercise that I really feel like doing, and not forcing myself to run every morning because it's the "right" thing to do. When my running bag I take running to work broke, I decided not to replace it and just enjoy cycling or walking instead. And when I received additional requests for mentees from <a href='https://mentorcruise.com' target='_blank'>MentorCruise</a> I decided to accept only one more applicant, who would be filling a space left by a previous mentee who I now work with less regularly.
 
 Here are some of the other things I've enjoyed doing in February.
 
@@ -52,6 +52,20 @@ Implementing the authentication with Twitter was one of the first things we crac
 
 We're well within our comfort zone with these technologies, but pretty soon we're going to think about getting our first iteration live and we might make some changes in our tech stack at that point, perhaps migrating to serverless functions.
 
+#### Reading list
+
+![February reading list](feb-2019/books.png)
+
+In February I read 4 books:
+
+**Hot Milk by Deborah Levy**: I quite enjoyed this, and would definitely read more by Levy, although I wouldn't put it right at the top of my favourites pile.
+
+**China Rich Girlfriend by Kevin Kawn**: I was a huge fan of Crazy Rich Asians, and this is the second in the series - equally hilarious and entertaining, and I can't wait to read the final book. I'm saving it for a while because I'll be really sad when I finish this trilogy.
+
+**Milkman by Anna Burns**: Although this won the Booker Prize last year, I've found it hard to get into. It's a story of growing up in Ireland during the Troubles, a period I don't know all that much about and the book is also not particularly enlightening, everything being cloaked in shady references and metaphor. So I was none the wiser and also a bit bored.
+
+**Shrinking Violets by Joe Moran**: Having read _Quiet_ by Susan Cain and found it hugely useful and fascinating in explaining common misconceptions around introversion & extroversion, and full of practical advice about how to carve out a place for yourself in the world that works for your personality type, I was curious to read more about this topic. What I learned was that introversion and shyness are absolutely not the same thing. Although I think I'm edging towards the introvered end of the scale, I'm not shy, so there was a lot in this book which I didn't identify with, and unfortunately I also found the writing forumlaic and repetitive.
+
 #### Other things
 
 A few other highlights of February included:
@@ -61,7 +75,8 @@ A few other highlights of February included:
 - Realising that yoghurt with anything is amazing
 - Starting crocheting a cushion cover for relaxation
 - Getting amazing pink corduroy dungarees for my birthday 🎂
-- Running on the rare days when it was sunny
+- Running in the sun
+- Eating lunch outside in MediaCity 🌞
 
 ![Miscellaneous highlights](feb-2019/feb.jpg)
 
