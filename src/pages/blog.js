@@ -1,6 +1,6 @@
-import React from 'react';
-import {Link, graphql} from 'gatsby';
-import Layout from '../components/layout';
+import React from "react";
+import { Link, graphql } from "gatsby";
+import Layout from "../components/layout";
 
 export default function BlogHomepage({ data }) {
   const posts = data.allMarkdownRemark.edges;
@@ -12,7 +12,8 @@ export default function BlogHomepage({ data }) {
           return (
             <p key={i}>
               <Link to={node.fields.slug}>{node.frontmatter.title}</Link>
-              <span className='postDate'>({node.frontmatter.date})</span>
+              <span className="postDate">({node.frontmatter.date})</span>
+              <p className="postDescription">{node.frontmatter.description}</p>
             </p>
           );
         })}
@@ -24,7 +25,7 @@ export default function BlogHomepage({ data }) {
 export const query = graphql`
   query {
     allMarkdownRemark(
-      filter: {fileAbsolutePath: {regex : "\/blog/"}}
+      filter: { fileAbsolutePath: { regex: "/blog/" } }
       sort: { fields: [frontmatter___date], order: DESC }
     ) {
       edges {
@@ -35,6 +36,7 @@ export const query = graphql`
           frontmatter {
             title
             date(formatString: "Do MMM, YYYY")
+            description
           }
         }
       }
