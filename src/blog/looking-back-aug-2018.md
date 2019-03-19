@@ -3,6 +3,7 @@ title: Looking back at August
 date: 2018-08-28
 tags: [review, personal, life]
 frontimage: myface.jpg
+description: My regular monthly blogpost, including a new house, lots of paint, visitors, running, and a get-together with other women in tech
 ---
 
 August has been a top month. One of the best months ever, probably!
@@ -48,7 +49,6 @@ It's been another great month at work - I really love the job I do, which is nic
 ##### Side Stuff
 
 Chachara is the working name of my side project, an app for practicing speaking in a foreign language. I think I will begin writing about my side project in separate blog posts because I'd like to document my progress on it month by month, but for now let's just say it took a back seat during August because we were so busy with the house move, but I'm going to get back on with it now that I've got a DESK AT HOME! 🎉🎉🎉
-
 
 ##### Women in Tech Meetup
 

@@ -2,11 +2,12 @@
 title: 2018 in 5 lists
 date: 2018-12-27
 tags: [reflection, annual-review, personal, new-year]
+description: In which I reflect on the year of 2018 with a series of lists, because the end of the year is the number 1 season for list making and I got thoroughly caught up in the frenzy.
 ---
 
 ![New years eve fun](./2018-review/nye.jpg)
 
-Personally, I've always enjoyed reflecting on the year as it draws to a close. I'm always susprised, when I take stock of the last 12 months, how much has actually happened - for good or for bad. Although I often get to the end of the week feeling like I haven't done anything very interesting or important, it turns out that I *have* been doing things after all, when I stop and take a minute to look back.
+Personally, I've always enjoyed reflecting on the year as it draws to a close. I'm always susprised, when I take stock of the last 12 months, how much has actually happened - for good or for bad. Although I often get to the end of the week feeling like I haven't done anything very interesting or important, it turns out that I _have_ been doing things after all, when I stop and take a minute to look back.
 
 Here are a few lists that sum up 2018 for me. They are mostly positive - 2018 has been on the whole a really positive year for me - but also I just don't feel like dwelling on the negatives here.
 
@@ -32,25 +33,21 @@ Here are a few lists that sum up 2018 for me. They are mostly positive - 2018 ha
 
 ![Me and Mauro at home at Christmas](./2018-review/xmas.png)
 
-
-2. **Running a marathon!** Errrrr, I still can't believe I ran a marathon. Actually, what I really can't believe is that it wasn't *that* bad. Turns out that if you train enough for something, your body can actually do it. The worst part was when I ate a bit too much at one of the snack stations and felt a bit sick and sluggish for the next 3 miles, but apart from that it was more or less okay. I even found a bit of extra energy somewhere to sprint the last mile! It certianly left me wanting to repeat the experience - in face, I've already booked my second marathon for next year, and would like to do a third later on in the year too.
+2. **Running a marathon!** Errrrr, I still can't believe I ran a marathon. Actually, what I really can't believe is that it wasn't _that_ bad. Turns out that if you train enough for something, your body can actually do it. The worst part was when I ate a bit too much at one of the snack stations and felt a bit sick and sluggish for the next 3 miles, but apart from that it was more or less okay. I even found a bit of extra energy somewhere to sprint the last mile! It certianly left me wanting to repeat the experience - in face, I've already booked my second marathon for next year, and would like to do a third later on in the year too.
 
 ![At the end of the marathon, still looking fresh... right?](./2018-review/marathon.png)
-
 
 3. **Walking 300 km of the Camino de Santiago** Actually, this was maybe even more of a feat than the marathon. At least during the marathon I didn't actually consider giving up, wheras I distinctly remember one afternoon on the Camino, still about 5 miles from our destination, hobbling along a scorching endless tarmac road with an ankle injury and thinking "Would Uber work out here? Is it physically possible to call a taxi?" In the end I didn't call a taxi, I somehow persevered, but honestly there were evenings when we got to a hostel at 6pm after a day's walking and physically could not move from the bed again until the morning, when we had to get up for the next leg of the journey. When we arrived at Santiago de Compostela, I was so proud of us I almost did a little cry.
 
 ![The first day of the Camino de Santiago](./2018-review/camino.png)
 
-
 4. **Buying a house** Mauro and I managed to scrape enough money together to buy a house, which was exciting! We were hapless buyers, barely looking round anywhere and settling on one of the first places we saw (as Mauro noted, we spent longer deciding what backpack to take to Spain than we did on what house to buy...) but amazingly it turned out rather well, with no complications (unless you count the mice in the kitchen - but it's an old church, after all, and they've responded well to Mouse-Be-Gone humane mouse repellents...). We also managed to overpay on our mortgage this year, which we hope to be able to do next year too!
 
+5) **Painting a wall** I was extememly chuffed about the big yellow wall we painted in our house.
 
-5. **Painting a wall** I was extememly chuffed about the big yellow wall we painted in our house.
+6) **Getting read of 465 things** over the course of 30 days. Shortly before we moved, Mauro and I did a "30 Day Challenge" which consisted of getting rid of 1 thing on the 1st day, 2 things on the 2nd day and so on, until you get rid of 30 things on the 30th day. Overall that makes - you guessed it - 465 things. Amazingly, the house looked absolutely no different for it. Where had all these things come from? Where are they now? Nobody knows, but we don't miss them, and we probably made about £400 from selling random things.
 
-6. **Getting read of 465 things** over the course of 30 days. Shortly before we moved, Mauro and I did a "30 Day Challenge" which consisted of getting rid of 1 thing on the 1st day, 2 things on the 2nd day and so on, until you get rid of 30 things on the 30th day. Overall that makes - you guessed it - 465 things. Amazingly, the house looked absolutely no different for it. Where had all these things come from? Where are they now? Nobody knows, but we don't miss them, and we probably made about £400 from selling random things.
-
-7. **Ditching the car** was also a big highlight for me. I've never enjoyed driving but had had a car for a few years in order to get to my Mum's house which is in the countryside about 60 miles away, and is inconvenient to reach by other means. However, in March we decided we'd had enough of running a car just to make this single trip on a monthly basis, and have since been braving public transport to get there. It's not so bad - we don't need a car in Manchester, and the very large inconvenience of the Northern rail services are probably still more convenient than running a car you don't really need.
+7) **Ditching the car** was also a big highlight for me. I've never enjoyed driving but had had a car for a few years in order to get to my Mum's house which is in the countryside about 60 miles away, and is inconvenient to reach by other means. However, in March we decided we'd had enough of running a car just to make this single trip on a monthly basis, and have since been braving public transport to get there. It's not so bad - we don't need a car in Manchester, and the very large inconvenience of the Northern rail services are probably still more convenient than running a car you don't really need.
 
 ![My old car, which despite what the photographic evidence suggests, didn't in fact knock that wall down](./2018-review/car.jpg)
 
@@ -58,25 +55,21 @@ Here are a few lists that sum up 2018 for me. They are mostly positive - 2018 ha
 
 ![Hair growth from December 2017 to December 2018](./2018-review/hair.png)
 
-9. **Giving up caffeine** This has improved my life *a lot* and I'm ridiculously glad that I did it.
-
+9. **Giving up caffeine** This has improved my life _a lot_ and I'm ridiculously glad that I did it.
 
 ### 4 Places Visited
 
 1. Valencia in January, for a lovely new year celebration and temperatures of 20 degrees! Why did we ever come back, actually?
-![In Castle Xativa](./2018-review/castle.png)
+   ![In Castle Xativa](./2018-review/castle.png)
 
 2. Amsterdam and Delft in February
-![Yeah alright that's just a heron wandering around the market in Amsterdam](./2018-review/heron.png)
+   ![Yeah alright that's just a heron wandering around the market in Amsterdam](./2018-review/heron.png)
 
+3) Madrid and Valencia in March
+   ![Mauro also bought some fancy new glasses this year](./2018-review/madrid.png)
 
-3. Madrid and Valencia in March
-![Mauro also bought some fancy new glasses this year](./2018-review/madrid.png)
-
-4. Madrid, Northern Spain and Santiago de Compostela for the Camino de Santiago in September
-![During the Camino](./2018-review/santiago.png)
-
-
+4) Madrid, Northern Spain and Santiago de Compostela for the Camino de Santiago in September
+   ![During the Camino](./2018-review/santiago.png)
 
 ### 5 of my favourite books from this year
 
@@ -119,7 +112,7 @@ A few things this year reminded me of this. It's a business relationship for the
 
 **4. Bash!**
 
-I put a lot of energy into studying the Bash scripting language, so I now officially *know Bash*.
+I put a lot of energy into studying the Bash scripting language, so I now officially _know Bash_.
 
 The end.
 

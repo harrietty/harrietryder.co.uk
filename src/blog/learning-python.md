@@ -2,11 +2,12 @@
 title: Learning my second programming language
 date: 2018-01-18
 tags: [learn-to-code, programming, python, javascript, learning]
+description: In which I sort-of try learning my second programming language and relearn the joy of being a beginner at something again
 ---
 
 ### Beginning with JavaScript
 
-When I first started programming, I had no idea what to learn first, why one language would be preferable over another, or even why there *were* so many in the first place.
+When I first started programming, I had no idea what to learn first, why one language would be preferable over another, or even why there _were_ so many in the first place.
 
 I'd previously learned HTML and CSS, plus a bit of JavaScript. All three are essential if you want to make a website look like anything, or do anything. And then I got serious about learning to code and assumed that all the other languages I hadn't learned yet (Ruby, Python, PHP, C#, Java...) would also be essential for various things that I just hadn't discovered yet. I really thought that there would come a day when I needed to know ALL THE LANGUAGES.
 
@@ -49,7 +50,7 @@ Next, I decided to start exploring a library called [Peewee](http://docs.peewee-
 
 ### Taking it further
 
-Although I can now get a fair bit done in Python, I don't feel comfortable saying I 'can code in Python'. At what point *do* you feel comfortable saying that? I can't remember when I felt like a JavaScript developer for the first time, but I guess it just slowly crept up on me that that's what I was.
+Although I can now get a fair bit done in Python, I don't feel comfortable saying I 'can code in Python'. At what point _do_ you feel comfortable saying that? I can't remember when I felt like a JavaScript developer for the first time, but I guess it just slowly crept up on me that that's what I was.
 
 Perhaps I'll feel like I can code in Python when I ship something real in Python for the first time (whenever that might be), or perhaps if I find myself in the position of explaining something to someone else and realising I actually do know what I'm talking about.
 

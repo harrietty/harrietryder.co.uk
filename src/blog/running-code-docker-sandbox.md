@@ -2,6 +2,7 @@
 title: Running user-submitted code in a Docker sandbox
 date: 2018-11-17
 tags: [code, howto, technical, tutorial]
+description: In which I explore how sites like CodeWars might work under the hood to execute a user's code remotely, and try pulling together the basics of running user code on a Docker container
 ---
 
 Before reading this, it would help if you knew the very basics of Docker:
@@ -19,7 +20,6 @@ Have you ever wondered how sites like [Codewars](http://codewars.com/) and [Hack
 
 ![The CodeWars interface](./img/codewars.png)
 
-
 These sites are not executing your code in the browser - they are sending it to their own servers to execute. Firstly, browsers only contain JavaScript runtimes, so they wouldn't be able to interpret code in languages such as Ruby or Python. And you'd only have access the the browser evironment, so no Node or anything like that. Secondly, there would be a risk of the user ending up doing something weird and breaking the site they were trying to interact with, or even crashing the whole browser. It wouldn't be a security risk, since users can already execute JavaScript on any page they like by going to the console and running it themselves, but limitations and poor user experience already make it a big enough no-go.
 
 The solution that these sorts of sites come up with is to devise a secure environment on the back-end to run the user's code. There are lots of articles about this topic, and many of them mention Docker as a solution to providing this secure environment. Prior to Docker, virtual machines such as VirtualBox may have been used, or companies may have implemented their own "sandboxes" (which CodeWars allude to in [this article](https://medium.com/@Codewars/next-gen-code-execution-engine-is-live-5a6692bb6d2e)), a sandbox being a secure(ish) environment that exposes enough of a programming language's features to be usable, but not enough for the user to do any harm to the system. However, CodeWars admit that their early sandbox was hackable, which sounds about right. I certainly wouldn't like the responsibility of attempting to build a completely secure sandbox for user submitted code. In short, thank the lord for Docker.
@@ -28,7 +28,7 @@ The solution that these sorts of sites come up with is to devise a secure enviro
 
 I wanted to learn how hard it would be to replicate the basic components of a system that receives user input and executes a test suite for this code in a Docker container, reporting back to the server and then to the user on how whether their code passed the tests.
 
-I was particularly interested in running *shell scripts*, becasue I have been frustrated recently at the lack of online exercises to practice shell scripting that actually make use of Bash to its full advantage. You can solve problems in Bash on CodeWars, but these tend to be problems that were actually designed for other programming languages. As such, you aren't solving real-world problems that you would actually *choose* Bash to solve.
+I was particularly interested in running _shell scripts_, becasue I have been frustrated recently at the lack of online exercises to practice shell scripting that actually make use of Bash to its full advantage. You can solve problems in Bash on CodeWars, but these tend to be problems that were actually designed for other programming languages. As such, you aren't solving real-world problems that you would actually _choose_ Bash to solve.
 
 For example, Bash is a poor choice for arithmetic and number manipulation, but it can do extremely powerful manipulation of large text files. It would be great if there were exercises out there that asked you to manipulate or search log files, or generally do the sorts of things you'd actually do with Bash. This would involve not only running a test suite for the user's code, but providing an environment in which those log files existed.
 
@@ -37,7 +37,6 @@ For example, Bash is a poor choice for arithmetic and number manipulation, but i
 The principle is to create a Docker image into which you can copy the user's code and the test code, execute it, and find out the result.
 
 I first created a simple Docker image from a Dockerfile like this:
-
 
 ```
 FROM alpine:3.8

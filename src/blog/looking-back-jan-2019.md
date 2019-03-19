@@ -2,6 +2,7 @@
 title: Looking back at January
 date: 2019-02-05
 tags: [review, personal, life]
+description: My regular monthly round-up, this month including snow, mentoring, a trip to london and AWS training.
 ---
 
 ![We had snow!](./jan-2019/snow.png)
@@ -24,7 +25,6 @@ On top of that, I've been trying to also keep on top of learning Spanish, readin
 
 As a result of my somewhat hectic month, I found myself sleeping badly for a little while, which was a wake up call as I usually have pretty good sleep. I've still got quite a lot on at the moment but I'm starting to say no to things now, which I always feel bad about, but is important if I want to stay sane!
 
-
 #### Working with MentorCruise
 
 One of the most intesting things I've been doing lately is mentoring. I signed up at the start of the year with [MentorCruise](https://mentorcruise.com), a service that connects mentors with people learning software development, data science etc. I've had a handful of requests, and in the end accepted one mentee whose aims really aligned with my skills. I have started meeting with my mentee on a weekly basis via Hangouts, and it's been a really positive experience for me so far, and something I'm definitely keen to continue. The definition of mentoring in this context can feel a bit vague, and what I offer probably falls somewhat in the realm of "tutor" as well as "mentor" but I guess that's something that mentors and mentees need to work out between them, depending what the goals and expectations of the mentee are. The platform is great, though, and in active development right now, so it's exciting to see it progress as I'm using it.
@@ -39,11 +39,11 @@ I read some awsome books last month, a selection of which I feel obliged to shar
 
 ![My favourite books this month](jan-2019/books.jpg)
 
-Firstly, Sally Rooney's *Conversations With Friends* was mavellous and I devoured it in almost 1 sitting. I am now number 143/143 on the list of library reservations for *Normal People*, so hurry up people of Manchester and get reading because I am SO excited to get my hands on this book. Unfortunately none of my career choices are working in my favour as I don't get to move to the top of the list because I used to work in libraries, nor can I hack their computer system.
+Firstly, Sally Rooney's _Conversations With Friends_ was mavellous and I devoured it in almost 1 sitting. I am now number 143/143 on the list of library reservations for _Normal People_, so hurry up people of Manchester and get reading because I am SO excited to get my hands on this book. Unfortunately none of my career choices are working in my favour as I don't get to move to the top of the list because I used to work in libraries, nor can I hack their computer system.
 
-I also adored Kevin Kawn's *Crazy Rich Asians*. It was such a romp - yes, a *romp* really feels like the right word. I promptly bought the next 2 books in the trilogy, *China Rich Girlfriend* and *Rich People Problems* which I hope are equally entertaining and rompful.
+I also adored Kevin Kawn's _Crazy Rich Asians_. It was such a romp - yes, a _romp_ really feels like the right word. I promptly bought the next 2 books in the trilogy, _China Rich Girlfriend_ and _Rich People Problems_ which I hope are equally entertaining and rompful.
 
-And finally, Paul Mason's *Postcapitalism* gave me some real food for thought. I'm not fully convinced by his optimistic view for the future of the economic system - logically of course I agree with him that capitalism as an economic system will not last forever, no system can last forever, and I could even be swayed by his argument that a combination of climate change, financial instability and a lack of new markets will converge in around 30 years or so to create a crisis of humungous proportions for capitalism (his doom mongering in this respect is quite convincing), but I am not sure I fully share his vision for how techology is already beginning to shape a radically different economic system. I feel like writing a full blog post in response to his book, but perhaps the more appropriate thing to do is buy 3 acres of land and a borehole and try to become self-sufficient ASAP.
+And finally, Paul Mason's _Postcapitalism_ gave me some real food for thought. I'm not fully convinced by his optimistic view for the future of the economic system - logically of course I agree with him that capitalism as an economic system will not last forever, no system can last forever, and I could even be swayed by his argument that a combination of climate change, financial instability and a lack of new markets will converge in around 30 years or so to create a crisis of humungous proportions for capitalism (his doom mongering in this respect is quite convincing), but I am not sure I fully share his vision for how techology is already beginning to shape a radically different economic system. I feel like writing a full blog post in response to his book, but perhaps the more appropriate thing to do is buy 3 acres of land and a borehole and try to become self-sufficient ASAP.
 
 #### Learning
 

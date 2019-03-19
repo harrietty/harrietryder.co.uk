@@ -3,11 +3,12 @@ title: Interviewing for a Software Engineer role
 date: 2018-03-01
 tags: [careers, job-hunting, softwaredevelopment]
 frontimage: myface.jpg
+description: In which I talk about my experiences interviewing for a software engineering role.
 ---
 
 A couple of months ago, I decided it was time for a change of direction and left my job at [Northcoders](https://northcoders.com/) to pursue programming full time.
 
-I've had an amazing time there and the decision to leave was not taken lightly. I loved what I was doing and I especially enjoyed getting to work with and watch the progress of so many enthusiastic, smart and inspiring people from so many different backgrounds. 
+I've had an amazing time there and the decision to leave was not taken lightly. I loved what I was doing and I especially enjoyed getting to work with and watch the progress of so many enthusiastic, smart and inspiring people from so many different backgrounds.
 
 ![cohort1](cohort1.jpg)
 
@@ -45,7 +46,7 @@ I was happy when I was asked why I wanted to work there because I had LOTS to sa
 
 This was awesome, although I was quite nervous. I have heard of companies doing this but never experienced it first hand. Given the cost of making a hiring mistake, I think it's a brilliant idea and I think more companies should embrace it. Seems like a lot of effort in the short term, but in the long term it's a great way for both parties to really see how you work and how you fit within the team. And it probably saves a lot of those first day nerves and awkwardness too.
 
-I'd been given a brief about the tasks I'd be doing on the day, and told that I didn't need to prepare in any way, and I tried to be strict with myself about that. 
+I'd been given a brief about the tasks I'd be doing on the day, and told that I didn't need to prepare in any way, and I tried to be strict with myself about that.
 
 I read the document and made some notes but I deliberately didn't Google anything or dig too deep into it because I wanted to be able to ask natural questions on the day and interact with the team in a natural way. I didn't want to turn up with the idea that I knew exactly what I was going to be doing and then not ask questions. I wanted to discover problems organically and have reasons to ask for help if I needed it.
 

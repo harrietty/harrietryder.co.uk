@@ -3,7 +3,9 @@ title: Why knitting is a perfect complement to coding
 date: 2016-11-19
 tags: [knitting, coding, relaxation]
 frontimage: myface.jpg
+description: In which I try to convince you that if you write code and don't knit, you're making a huge mistake and could be living a far woolier, happier life.
 ---
+
 A couple of months ago, one of the students at [Northcoders](https://www.northcoders.com), [Jack](https://twitter.com/_jgilla_), asked me whether I would be interested in doing some knitting for a local yarn bomb. He knew that I knitted because I'd previously brought a knitted bat into work (it's not worth explaining why) and wondered if I could contribute a few squares for the project. I was more than happy to, but it also occurred to me that I might as well teach him and anyone else how to knit, too, since it doesn't take long for even a beginner knitter to make a simple square and then we'd be able to contribute even more material.
 
 ![Knit Club](knitclub.png)

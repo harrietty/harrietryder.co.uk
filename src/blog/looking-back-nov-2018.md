@@ -2,11 +2,12 @@
 title: Looking back at November
 date: 2018-12-01
 tags: [review, personal, life]
+description: My monthly end-of-month round-up, this time featuring lots of running, a night at the ballet, bash shell scripting and an engagement (mine!!)
 ---
 
 ![Autumn Colours on the Trans Pennine Trail](./nov-2018/trail.png)
 
-Wooo, it's the 1st December! This is super exciting because [Advent of Code](https://adventofcode.com/) for 2018 has just gone live, and this means 25 days of coding challenges to complete in the run-up to Christmas. I'm not joking, AoC really is a December highlight for me. I love how tough the problems get, and the limited timeframe for the advent calendar. It's easy to commit to because it's only 25 days (and I know I'm not gonna make it all the way anyway) and it's a great chance to practice raw problem solving skills. 
+Wooo, it's the 1st December! This is super exciting because [Advent of Code](https://adventofcode.com/) for 2018 has just gone live, and this means 25 days of coding challenges to complete in the run-up to Christmas. I'm not joking, AoC really is a December highlight for me. I love how tough the problems get, and the limited timeframe for the advent calendar. It's easy to commit to because it's only 25 days (and I know I'm not gonna make it all the way anyway) and it's a great chance to practice raw problem solving skills.
 
 In other years, I've competed as part of a Northcoders team where we gave prizes for first, second and third place but this year I guess I'll just be competing against the global leaderboard (and Mauro), which means no prizes haha and not even any recognition because everyone else is really good. Some people literally complete the challenges before I've even had time to read them 🤷
 
@@ -27,7 +28,6 @@ I am also looking forward to this month because
 🔶 Cooking lots of yummy food
 
 🔶 Work Christmas do, which is going to be a walk and pub lunch
-
 
 Anyway, enough about next month. What's been going on in November?
 
@@ -63,7 +63,7 @@ When it's cold and miserable outside, it's also super difficult to drag myself o
 
 💎 **Finish my Bash course on Pluralsight** 💎
 
-Yes!! I did this! Wooooo! I was almost done anyway but I'm still proud I made it to the end. Learning bash properly has made a *big* difference to me. It has enabled me to write short scripts to solve problems, understand deploy scripts better, and use more of the builtin commands in the terminal to perform quick, but helpful operations. So an overall productivity increase, and also in general it's just been great to learn a language that works really differently to other programming languages I've used. And I think every developer should have a working knowledge of bash so I'm pleased to be plugging that hole.
+Yes!! I did this! Wooooo! I was almost done anyway but I'm still proud I made it to the end. Learning bash properly has made a _big_ difference to me. It has enabled me to write short scripts to solve problems, understand deploy scripts better, and use more of the builtin commands in the terminal to perform quick, but helpful operations. So an overall productivity increase, and also in general it's just been great to learn a language that works really differently to other programming languages I've used. And I think every developer should have a working knowledge of bash so I'm pleased to be plugging that hole.
 
 💎 **Make public the Bash exercises I've been creating** 💎
 
@@ -77,8 +77,7 @@ It's currently looking like this...
 
 Not too bad, eh? And it actually works, too!
 
-Although there's a *lot* more to be done - it's just a proof of concept with a fancy font at the moment.
-
+Although there's a _lot_ more to be done - it's just a proof of concept with a fancy font at the moment.
 
 💎 **Write a notebook entry in Spanish per day (my equivalent of NaNoWriMo)** 💎
 
@@ -95,7 +94,6 @@ I didn't notice myself taking many more pictures, and I'm sad that I didn't take
 I also got some photos developed finally from when we went to Spain and [walked the Camino de Santiago](/blog/camino-de-santiago/). However, as you can see, we seem to have had some difficulty using a camera.
 
 ![We can't use a camera](./nov-2018/photos.png)
-
 
 💎 **Read a book in Spanish** 💎
 

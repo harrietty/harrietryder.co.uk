@@ -2,6 +2,7 @@
 title: Walking the Camino de Santiago
 date: 2018-09-30
 tags: [holidays, travel, health, fitness]
+description: In which Mauro and I walk a million kilometers, experience a range of leg-related injuries and see a large amount of Spanish countryside.
 ---
 
 Last weekend, Mauro and I got back from our main holiday of the year which was walking the Camino de Santiago. The Camino is a long distance pilgrimage route primarily in the North of Spain, leading to the city of Santiago de Compostela where the remains of St. James were once discovered. There are paths to the city from all over the place, including Portugal, Madrid and Valencia and other trails from across Europe join up with the route as well. The main path, which we followed, starts over the border in France although we didn't have time to walk the entire distance, so we chose a 300km section that starts in Léon, ending in Santiago.
@@ -60,7 +61,7 @@ In summary, we both absolutely loved the trip and can't wait to choose another s
 
 👣 Get the right shoes, and practice walking in them. I wore trainers the whole time - next time I would be interested to see if lightweight walking shoes would be more comfortable.
 
-👣 Take less stuff. I packed pretty light (I only took 3 pairs of socks and knickers, for example) but for some reason I took two paperback books which were unnecessary weight when I could have just used the Kindle. 
+👣 Take less stuff. I packed pretty light (I only took 3 pairs of socks and knickers, for example) but for some reason I took two paperback books which were unnecessary weight when I could have just used the Kindle.
 
 👣 Schedule in short/rest days. It would have been good to have a couple of 15km days thrown in the mix to give us time to recover a bit better
 
@@ -69,4 +70,3 @@ In summary, we both absolutely loved the trip and can't wait to choose another s
 👣 Multipurpose soap - for washing clothes, body, hair, etc. This would have been useful and cut down on the different types of toiletries we were carrying
 
 👣 Deep Heat/Physiocream or some such type of massage cream. We bought some half way through and it was lovely to end the day with a massage for the aching legs
-

@@ -3,6 +3,7 @@ title: 8 things I learned during Advent of Code 2016
 date: 2017-01-26
 tags: [coding, careers, learning]
 frontimage: myface.jpg
+description: In which I reflect on what I learned trying to complete Advent of Code for the first time.
 ---
 
 [Advent of Code](http://adventofcode.com/) has been running for a couple of years now. It's a festive collection of small programming problems, "small" being their terminology not mine! It works really nicely because the problem is released each day, and rather than having to code in an online editor and submit your code, you solve the problem in your own environment in whatever way you want. The functions you have to implement are designed to solve problems you could generally never do in your head or on paper (although every now and then you are tempted to try). Then you run their input through your function and it comes out with some ridiculous number like 439423094, and you verify you've got it working by dropping that result into a field for them to test. Super simple, tonnes of freedom, and an excellent reddit community who get really stuck into it every year.

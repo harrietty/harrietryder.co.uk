@@ -2,6 +2,7 @@
 title: Looking back at December
 date: 2019-01-10
 tags: [review, personal, life]
+description: My regular recap of the past month, this time including marathon running, tech ladies, engagement parties and a deceased dog :(
 ---
 
 You might not be aware of this, but a little while ago it was December 2018. Getting all caught up in the end-of-year reflections and resolutions for personal transformation, this fact almost completely passed me by. Now it's well into January, but so that poor December doesn't get left out (and my blog posts are all uniform) I'm finally sitting down to post a review of The Forgotten Month.
@@ -38,7 +39,7 @@ We went to our regular haunt of Sandbar, and in festive spirit lots of people tu
 
 Did you know there were so many lady developers in the entire world? Nope? Now you do! And there are even more of us than that!!
 
-Another highlight of the month was going on a lovely **Christmas walk with my team** at work. Instead of a booze-fuelled traditional Christmas party, we dedicded to go on a wholesome walk around a reservoir near Manchester instead, an activity and sentiment I massively appreciate as I'm definitely not one for boozy late-night parties. 
+Another highlight of the month was going on a lovely **Christmas walk with my team** at work. Instead of a booze-fuelled traditional Christmas party, we dedicded to go on a wholesome walk around a reservoir near Manchester instead, an activity and sentiment I massively appreciate as I'm definitely not one for boozy late-night parties.
 
 ![Dovestone Reservoir](dec-2018/walk.jpg)
 

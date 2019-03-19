@@ -2,6 +2,7 @@
 title: Looking back at September
 date: 2018-10-09
 tags: [review, personal, life]
+description: My regular end-of-month review, this time featuring the Camino de Santiago, a trip back to Northcoders, and a month in our new house!
 ---
 
 Wow, where did September go? Well, most of it disappeared in Spain, where I spent 2 weeks [walking 300km of the Camino de Santiago](/blog/camino-de-santiago/). But what about the other two weeks at the beginning and the end? I really struggle to remember much of anything, but according to my diary things did happen!
@@ -16,7 +17,6 @@ We also ordered an organic vegetable box which arrives every Wednesday and is ho
 
 ![Veg box](sept2018/veg.png)
 
-
 ##### Revisiting Northcoders
 
 At the beginning of September I popped back to Northcoders for a couple of hours to chat to Amul, a good friend, ex-classmate and ex-colleague of mine. We were on the first cohort together at [Northcoders](https://northcoders.com/) in April 2016 and we then both began working together afterwards. He invited me back for a 'fireside chat' (there was no fire involved) where we talked about the development of the course, software development as a career, expectations, tips and advice, with an audience of about 60 current or very recent students.
@@ -26,7 +26,6 @@ At the beginning of September I popped back to Northcoders for a couple of hours
 It was a pleasure to chat to everyone and I was pleasantly surprised that people actually seemed interested in what I had to say and had plenty of questions! I gathered that most people had the transition from bootcamp to job on their minds, as most questions focussed around this topic, with questions ranging from "Do employers value you as much as a computer science graduate?" (I've never worked with a computer science graduate so I don't know, but I think employers should and would hope most do) to "What do you wish you'd known before going into a job?" (SSH, tunnelling, better CLI skills).
 
 One of my favourite questions was "What advice would you give to people on the course right now?", which is quite a vague question but I liked it because I had the perfect answer stashed up my sleeve which I always try and give to anyone who's learning to code - don't worry too much! It's going to be your career to keep on learning and practicing this stuff, so don't get hung up on having to know EVERYTHING right now. You have a long, long time ahead of you where you're going to get PAID to keep honing your skills so you really don't need to stress right now.
-
 
 ##### Running & Health
 
