@@ -3,6 +3,9 @@ node_js: node
 branches:
   only:
     - master
+before_install:
+  - pip install --user awscli
+  - export PATH=$PATH:$HOME/.local/bin
 script:
   - npm run build
 deploy:
