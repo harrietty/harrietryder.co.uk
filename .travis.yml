@@ -11,10 +11,6 @@ script:
 deploy:
   provider: script
   skip_cleanup: true
-  script:
-    - python --version
-    - sudo apt-get install python3.6
-    - python --version
-    - npm run deploy
+  script: deploy.sh
 after_deploy:
   script: npm run clear
