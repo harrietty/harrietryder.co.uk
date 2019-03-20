@@ -1,16 +1,18 @@
-language: node_js
-node_js: node
+language: python
+python:
+  - "3.6"
 branches:
   only:
     - master
 before_install:
-  - pip install --user awscli
-  - export PATH=$PATH:$HOME/.local/bin
+  - sudo apt-get install nodejs npm
+install:
+  - npm install
 script:
   - npm run build
 deploy:
   provider: script
   skip_cleanup: true
-  script: bash ./deploy.sh
+  script: bash ./scripts/deploy.sh
 after_deploy:
   script: npm run clear
