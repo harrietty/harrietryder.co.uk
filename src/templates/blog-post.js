@@ -1,20 +1,21 @@
-import React from 'react'
-import {graphql} from 'gatsby';
-import Layout from '../components/layout'
+import React from "react";
+import { graphql } from "gatsby";
+import Layout from "../components/layout";
 
-import './blog-post.css';
+import "./blog-post.css";
 
-export default function BlogPost ({data}) {
-  const {html} = data.markdownRemark;
-  const {title, date, description} = data.markdownRemark.frontmatter;
+export default function BlogPost({ data }) {
+  const { html } = data.markdownRemark;
+  const { title, date, description } = data.markdownRemark.frontmatter;
+  const { slug } = data.markdownRemark.fields;
   return (
-    <Layout meta={{type: 'post', title, description}}>
-      <div id='blogArea'>
-        <div className='blogHeader'>
+    <Layout meta={{ type: "post", title, description, slug }}>
+      <div id="blogArea">
+        <div className="blogHeader">
           <h1>{title}</h1>
-          {date && <h6 className='blogDate'>Posted on: {date}</h6>}
+          {date && <h6 className="blogDate">Posted on: {date}</h6>}
         </div>
-        <div dangerouslySetInnerHTML={{__html: html}} />
+        <div dangerouslySetInnerHTML={{ __html: html }} />
       </div>
     </Layout>
   );
@@ -26,10 +27,13 @@ export const query = graphql`
       html
       frontmatter {
         title
-        date(formatString: "Do MMM, YYYY"),
+        date(formatString: "Do MMM, YYYY")
         tags
         description
       }
+      fields {
+        slug
+      }
     }
   }
-`
+`;
