@@ -27,12 +27,13 @@ const IndexPage = ({ data }) => {
                 <div className="intro">
                   <p>
                     I'm a software developer and educator with a passion for
-                    inclusivity and diversifying the tech workforce.
+                    inclusivity and diversifying the tech workforce. I work in
+                    JavaScript/NodeJS, React, Ruby, Rails, AWS. Currently 💜ing
+                    all things JAMStack!
                   </p>
                   <p>
-                    I <a href="#blog">blog</a> about tech, my journey into it,
-                    education and my life in general. Most of my blog posts are
-                    suitable for beginners!
+                    I <a href="#blog">blog</a> and speak about tech, my journey
+                    into it, and tech education.
                   </p>
                   <p>
                     Read more about my <a href="#education">education work</a>.
@@ -194,7 +195,7 @@ const IndexPage = ({ data }) => {
                 imgDesc="Giving a lecture a cohort of returners"
               >
                 <p>
-                  In my current role with{" "}
+                  At{" "}
                   <a
                     href="https://techreturners.com"
                     target="_blank"
@@ -208,9 +209,9 @@ const IndexPage = ({ data }) => {
                   into work with an in-demand, modern skillset.
                 </p>
                 <p>
-                  Besides teaching, I'm a full-stack software engineer,
-                  particularly interested in React, AWS, cloud technologies and
-                  fledgeling interest in low level programming.
+                  Besides teaching, I'm a full-stack software engineer, working
+                  on a range of client and personal projects. I'm specifically
+                  interested in AWS, React and the JAMStack.
                 </p>
               </EducatorSection>
 
@@ -276,7 +277,7 @@ const IndexPage = ({ data }) => {
                 imgDesc="Giving a talk at Codebar"
               >
                 <p>
-                  I regularly mentor at{" "}
+                  I organise and mentor at{" "}
                   <a
                     href="https://codebar.io/manchester"
                     target="_blank"
