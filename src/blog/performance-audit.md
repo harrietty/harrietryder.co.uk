@@ -5,7 +5,7 @@ tags: [performance, audit, lighthouse]
 description: "Spoiler: I actually only reached 98% and that's okay with me"
 ---
 
-![Google Chrome's Lighthous Audit Tool](./may-2019/lighthouse.png)
+![Google Chrome's Lighthouse Audit Tool](./may-2019/lighthouse.png)
 
 For the last week or so in my spare time, I've been toiling to achieve a 100% audit across all aspects of Chrome's Lighthouse web auditing tool. Lighthouse is super simple to use - you go to the developer console in Chrome and select "Audits". Run whichever audits you want, on whatever type of simulated connection you want, and it will tell you how well your site is deemed to perform as well as recommend improvements and opportunities. Another similar tool is <a href="https://tools.pingdom.com/" target="_blank">Pingdom</a>.
 
