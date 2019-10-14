@@ -26,10 +26,13 @@ const IndexPage = ({ data }) => {
                 <img src={myFace} className="myFace" alt="My Face" />
                 <div className="intro">
                   <p>
-                    I'm a software developer and educator with a passion for
-                    inclusivity and diversifying the tech workforce. I work in
+                    I'm a full-stack software engineer with a passion for
+                    natural languages and education. I work in
                     JavaScript/NodeJS, React, Ruby, Rails, AWS. Currently 💜ing
-                    all things JAMStack!
+                    all things JAMStack and working on a little side-project:{" "}
+                    <a href="https://conju-gator.com" target="_blank">
+                      conju-gator.com
+                    </a>
                   </p>
                   <p>
                     I <a href="#blog">blog</a> and speak about tech, my journey
