@@ -17,5 +17,4 @@ deploy:
   provider: script
   skip_cleanup: true
   script: npm run deploy
-after_deploy:
-  script: npm run clear
+after_deploy: npm run clear
