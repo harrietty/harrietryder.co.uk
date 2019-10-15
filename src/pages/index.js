@@ -14,7 +14,6 @@ import "./index.css";
 import EducatorSection from "../components/EducatorSection";
 
 const IndexPage = ({ data }) => {
-  console.log(data);
   return (
     <Layout>
       <div className="container-fluid">
