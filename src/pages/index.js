@@ -29,7 +29,11 @@ const IndexPage = ({ data }) => {
                     natural languages and education. I work in
                     JavaScript/NodeJS, React, Ruby, Rails, AWS. Currently 💜ing
                     all things JAMStack and working on a little side-project:{" "}
-                    <a href="https://conju-gator.com" target="_blank">
+                    <a
+                      href="https://conju-gator.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       conju-gator.com
                     </a>
                   </p>
@@ -87,6 +91,26 @@ const IndexPage = ({ data }) => {
             <section>
               <h3>external blogs/publications</h3>
               <ul id="externalPosts">
+                <li>
+                  <a
+                    href="https://dev.to/harri_etty/maybe-i-should-have-just-used-create-react-app-56af"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Maybe I Should Have Just Used create-react-app
+                  </a>{" "}
+                  (dev.to)
+                </li>
+                <li>
+                  <a
+                    href="https://dev.to/harri_etty/from-javascript-to-ruby-a-few-of-my-favourite-features-37mf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    From JavaScript to Ruby: A Few of my Favourite Features
+                  </a>{" "}
+                  (dev.to)
+                </li>
                 <li>
                   <a
                     href="https://medium.freecodecamp.org/what-to-expect-in-your-first-week-as-a-software-developer-322572f17063"
