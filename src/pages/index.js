@@ -93,6 +93,16 @@ const IndexPage = ({ data }) => {
               <ul id="externalPosts">
                 <li>
                   <a
+                    href="https://dev.to/harri_etty/the-introduction-to-servers-i-wish-i-d-had-44jl"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    The Introduction to Servers I Wish I'd Had
+                  </a>{" "}
+                  (dev.to)
+                </li>
+                <li>
+                  <a
                     href="https://dev.to/harri_etty/maybe-i-should-have-just-used-create-react-app-56af"
                     target="_blank"
                     rel="noopener noreferrer"
