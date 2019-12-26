@@ -5,13 +5,13 @@ tags: [AWS, learning, cloud, exam, training]
 description: My general take on the experience - is it worth it, should you do it, what's involved?
 ---
 
-Earlier this year I got my <a href="" target="_blank">AWS Associate Developer</a> certificate. A few months later, after answering a bunch of questions from a few people who wanted to know what was involved and whether it was worth it, I thought I'd pull together a few thoughts.
+Earlier this year I got my <a href="https://aws.amazon.com/certification/certified-developer-associate/" target="_blank">AWS Developer Associate</a> certificate. A few months later, after answering a bunch of questions from a few people who wanted to know what was involved and whether it was worth it, I thought I'd pull together a few thoughts.
 
 ### What is it?
 
-AWS offers a <a href="" target="_blank">number of certifications</a> which are obtained by taking a multiple choice exam, to prove proficiency in using AWS technologies. You basically study a curriculum for a while, and sign up to sit an exam at an examination centre near you. The questions are multiple choice, covering a range of AWS services and practices, delivered via a PC screen (a bit like your driving theory test), and you find out there and then whether you passed or not.
+AWS offers a <a href="https://aws.amazon.com/certification/" target="_blank">number of certifications</a> which are obtained by taking a multiple choice exam, to prove proficiency in using AWS technologies. You basically study a curriculum for a while, and sign up to sit an exam at an examination centre near you. The questions are multiple choice, covering a range of AWS services and practices, delivered via a PC screen (a bit like your driving theory test), and you find out there and then whether you passed or not.
 
-Some exams are fairly generic, covering a large range of services and architectural patterns, whereas some of the more advanced exams specialise in areas such as <a href="" target="_blank">big data</a> or <a href="" target="_blank">security</a>.
+Some exams are fairly generic, covering a large range of services and architectural patterns, whereas some of the more advanced exams specialise in areas such as <a href="https://aws.amazon.com/certification/certified-big-data-specialty/" target="_blank">big data</a> or <a href="https://aws.amazon.com/certification/certified-security-specialty/" target="_blank">security</a>.
 
 ![Main training pathways with AWS](./img/aws.png)
 
@@ -41,9 +41,9 @@ Architect and Developer are probably slightly broader than Operations, and I cho
 
 You can see the basic cost in USD in the table above (it does change and I think it depends where you're based too so that's just an approximation), but you also have to factor in other costs:
 
-- Learning material: **up to \$100** This depends on whether you sign up for <a href="" target="_blank">acloud.guru</a> or similar for a few months, or buy a Udemy course or whatever, but you'll definitely need some kind of official study materials so you know you're revising the right stuff.
+- Learning material: **up to \$100** This depends on whether you sign up for <a href="https://acloud.guru/" target="_blank">acloud.guru</a> or similar for a few months, or buy a Udemy course or whatever, but you'll definitely need some kind of official study materials so you know you're revising the right stuff.
 
-- Practice exams: **up to \$50** You can take practice exams on websites like <a href="" target="_blank">acloud.guru</a> and buy packs on Udemy, but you can also buy official past question packs on <a href="" target="_blank">the AWS website</a> which are worth doing, so you get a real idea of what the questions will be like.
+- Practice exams: **up to \$50** You can take practice exams on websites like <a href="https://acloud.guru/" target="_blank">acloud.guru</a> and buy packs on Udemy, but you can also buy official past question packs on <a href="https://aws.amazon.com/certification/certification-prep/" target="_blank">the AWS website</a> which are worth doing, so you get a real idea of what the questions will be like.
 
 - Time: your time has a cost too, of course. How/if you want to factor this in is up to you. Maybe you're getting paid to study this during work time, which is awesome. More about this below...
 
