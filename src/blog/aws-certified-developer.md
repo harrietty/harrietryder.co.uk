@@ -1,5 +1,5 @@
 ---
-title: My experience with the AWS Associate Developer exam
+title: My experience with the AWS Developer Associate exam
 date: 2019-10-22
 tags: [AWS, learning, cloud, exam, training]
 description: My general take on the experience - is it worth it, should you do it, what's involved?
