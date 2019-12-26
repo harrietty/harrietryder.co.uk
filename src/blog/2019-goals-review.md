@@ -49,7 +49,7 @@ This one took a weird turn. I originally had in mind something like building a p
 
 Then I started mentoring through <a href="https://mentorcruise.com/" target="_blank">MentorCruise</a> and earning £20 - £30 an hour which I thought counted towards my goal of generating a side-income but it also wasn't exactly what I had in mind and was quite hard to fit around other things in my schedule.
 
-So I stopped doing that, went on a journey of teaching more, and then less again, in my day job, and am currently at a homeostatis of earning an additional income through teaching software development in the evenings, in a schedule that is much better for me and gives a lot more impact that I felt online mentoring provided. Again, this isn't what I had in mind by this goal but here we are!
+So I stopped doing that, went on a journey of teaching more, and then less again, in my day job, and am currently at a homeostatis of earning an additional income through teaching software development in the evenings, in a schedule that is much better for me and gives a lot more impact than I felt online mentoring provided. Again, this isn't what I had in mind by this goal but here we are!
 
 9. 🤸‍ **Take my yoga to the next level**
 
