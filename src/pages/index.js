@@ -323,7 +323,7 @@ const IndexPage = ({ data }) => {
                   </a>{" "}
                   a non-profit group designed to help underrepresented people
                   learn to code in a friendly and supportive environment. I have
-                  also lead courses in Ruby, HTML and CSS with{" "}
+                  also led courses in Ruby, HTML and CSS with{" "}
                   <a
                     href="https://www.codefirstgirls.org.uk/"
                     target="_blank"
