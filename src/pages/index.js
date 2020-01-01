@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, graphql } from "gatsby";
 import Layout from "../components/layout";
-import myFace from "../img/face2.png";
+import myFace from "../img/face.png";
 import codebar from "../img/1.jpg";
 import cfg from "../img/3.jpg";
 import randomTalks from "../img/6.jpg";
