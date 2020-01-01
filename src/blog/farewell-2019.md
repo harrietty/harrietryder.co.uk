@@ -2,7 +2,7 @@
 title: 2019 Retrospective
 date: 2019-12-30
 tags: [reflection, annual-review, personal, new-year]
-description: Who can resist a load of lists at the end of the year?
+description: A long essay with lots of pictures from 2019. There's a surprise at the end!
 ---
 
 First of all, I'd just like you to take a look at my <a href="/blog/farewell-2018" target="_blank">2018 in 5 lists</a> blog post and look closely at those pictures taken a full 12 months, 365 days ago.
