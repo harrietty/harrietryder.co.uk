@@ -85,7 +85,6 @@ const Layout = ({ meta, children }) => {
         }
       `}
       render={data => {
-        console.log({ data });
         return (
           <div>
             <Helmet

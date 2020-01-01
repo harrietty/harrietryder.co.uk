@@ -33,7 +33,7 @@ Here are a few lists that sum up 2018 for me. They are mostly positive - 2018 ha
 
 ![Me and Mauro at home at Christmas](./2018-review/xmas.png)
 
-2. **Running a marathon!** Errrrr, I still can't believe I ran a marathon. Actually, what I really can't believe is that it wasn't _that_ bad. Turns out that if you train enough for something, your body can actually do it. The worst part was when I ate a bit too much at one of the snack stations and felt a bit sick and sluggish for the next 3 miles, but apart from that it was more or less okay. I even found a bit of extra energy somewhere to sprint the last mile! It certianly left me wanting to repeat the experience - in face, I've already booked my second marathon for next year, and would like to do a third later on in the year too.
+2. **Running a marathon!** Errrrr, I still can't believe I ran a marathon. Actually, what I really can't believe is that it wasn't _that_ bad. Turns out that if you train enough for something, your body can actually do it. The worst part was when I ate a bit too much at one of the snack stations and felt a bit sick and sluggish for the next 3 miles, but apart from that it was more or less okay. I even found a bit of extra energy somewhere to sprint the last mile! It certianly left me wanting to repeat the experience - in fact, I've already booked my second marathon for next year, and would like to do a third later on in the year too.
 
 ![At the end of the marathon, still looking fresh... right?](./2018-review/marathon.png)
 
