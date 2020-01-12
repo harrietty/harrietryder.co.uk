@@ -8,14 +8,20 @@ module.exports = {
     Atomics: "readonly",
     SharedArrayBuffer: "readonly"
   },
+  parser: "babel-eslint",
   parserOptions: {
     ecmaFeatures: {
       jsx: true
     },
-    ecmaVersion: 2018,
+    ecmaVersion: 2019,
     sourceType: "module"
   },
   plugins: ["react"],
+  settings: {
+    react: {
+      version: "detect"
+    }
+  },
   rules: {
     indent: ["error", 2],
     "linebreak-style": ["error", "unix"],

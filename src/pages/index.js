@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { Link, graphql } from "gatsby";
 import Layout from "../components/layout";
 import myFace from "../img/face.png";
@@ -26,10 +27,12 @@ const IndexPage = ({ data }) => {
                 <img src={myFace} className="myFace" alt="My Face" />
                 <div className="intro">
                   <p>
-                    I&apos;m a full-stack software engineer with a passion for
-                    natural languages and education. I work in
-                    JavaScript/NodeJS, React, Ruby, Rails, AWS. Currently 💜ing
-                    all things JAMStack and working on a little side-project:{" "}
+                    Hi! I&apos;m a software engineer with a passion for natural
+                    languages and education. Currently working as a senior
+                    front-end developer in a React/Redux/Typescript stack,{" "}
+                    <a href="#education">teaching</a> software development in
+                    the evenings and working on too many sideprojects, most
+                    recently:{" "}
                     <a
                       href="https://conju-gator.com"
                       target="_blank"
@@ -41,9 +44,6 @@ const IndexPage = ({ data }) => {
                   <p>
                     I <a href="#blog">blog</a> and speak about tech, my journey
                     into it, and tech education.
-                  </p>
-                  <p>
-                    Read more about my <a href="#education">education work</a>.
                   </p>
                 </div>
               </div>
@@ -98,7 +98,7 @@ const IndexPage = ({ data }) => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    The Introduction to Servers I Wish I'd Had
+                    The Introduction to Servers I Wish I&apos;d Had
                   </a>{" "}
                   (dev.to)
                 </li>
@@ -246,9 +246,10 @@ const IndexPage = ({ data }) => {
                   into work with an in-demand, modern skillset.
                 </p>
                 <p>
-                  Besides teaching, I'm a full-stack software engineer, working
-                  on a range of client and personal projects. I'm specifically
-                  interested in AWS, React and the JAMStack.
+                  I&apos;m proud to have helped dozens of returners retrain and
+                  enter the tech industry, bringing much-needed, diverse talent
+                  to some of Manchester&apos;s top tech businesses including
+                  Booking.com, Infinity Works and Lloyds Bank.
                 </p>
               </EducatorSection>
 
@@ -266,7 +267,7 @@ const IndexPage = ({ data }) => {
                   >
                     Northcoders
                   </a>{" "}
-                  (the UK's top bootcamp for graduate outcomes{" "}
+                  (the UK&apos;s top bootcamp for graduate outcomes{" "}
                   <span role="img" aria-label="geeky face">
                     🤓
                   </span>
@@ -285,10 +286,10 @@ const IndexPage = ({ data }) => {
               >
                 <p>
                   I have run several Lightning Talks events, and often look for
-                  opportunities to give lightning talks myself. Talks I've given
-                  include{" "}
+                  opportunities to give lightning talks myself. Talks I&apos;ve
+                  given include{" "}
                   <span className="stronger">
-                    What's in the .git directory?
+                    What&apos;s in the .git directory?
                   </span>{" "}
                   and{" "}
                   <span className="stronger">Introduction to the JAMStack</span>
@@ -401,6 +402,10 @@ const IndexPage = ({ data }) => {
       </div>
     </Layout>
   );
+};
+
+IndexPage.propTypes = {
+  data: PropTypes.object
 };
 
 export const query = graphql`

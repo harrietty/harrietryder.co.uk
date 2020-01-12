@@ -1,26 +1,26 @@
 module.exports = {
   siteMetadata: {
-    title: `harriet ryder`
+    title: "harriet ryder"
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
+    "gatsby-plugin-react-helmet",
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: "gatsby-source-filesystem",
       options: {
-        name: `src`,
+        name: "src",
         path: `${__dirname}/src/`
       }
     },
     {
-      resolve: `gatsby-transformer-remark`,
+      resolve: "gatsby-transformer-remark",
       options: {
         plugins: [
           {
-            resolve: `gatsby-remark-figure-caption`,
+            resolve: "gatsby-remark-figure-caption",
             options: { figureClassName: "md-figure" }
           },
           {
-            resolve: `gatsby-remark-images`,
+            resolve: "gatsby-remark-images",
             options: {
               // It's important to specify the maxWidth (in pixels) of
               // the content container as this plugin uses this as the
@@ -31,7 +31,7 @@ module.exports = {
             }
           },
           {
-            resolve: `gatsby-remark-prismjs`,
+            resolve: "gatsby-remark-prismjs",
             options: {
               noInlineHighlight: true
             }
@@ -39,13 +39,13 @@ module.exports = {
           {
             resolve: "gatsby-remark-copy-linked-files",
             options: {
-              ignoreFileExtensions: [`png`, `jpg`, `jpeg`, `bmp`, `tiff`]
+              ignoreFileExtensions: ["png", "jpg", "jpeg", "bmp", "tiff"]
             }
           }
         ]
       }
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`
+    "gatsby-transformer-sharp",
+    "gatsby-plugin-sharp"
   ]
 };

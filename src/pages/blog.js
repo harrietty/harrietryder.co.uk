@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { Link, graphql } from "gatsby";
 import Layout from "../components/layout";
 
@@ -21,6 +22,10 @@ export default function BlogHomepage({ data }) {
     </Layout>
   );
 }
+
+BlogHomepage.propTypes = {
+  data: PropTypes.object
+};
 
 export const query = graphql`
   query {

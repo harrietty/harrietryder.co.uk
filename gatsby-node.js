@@ -1,19 +1,19 @@
-const path = require(`path`);
-const { createFilePath } = require(`gatsby-source-filesystem`);
+const path = require("path");
+const { createFilePath } = require("gatsby-source-filesystem");
 
 // This is needed for transforming data when a node is created.
 // In this case, we generate and add the slug to each Node
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions;
-  if (node.internal.type === `MarkdownRemark`) {
+  if (node.internal.type === "MarkdownRemark") {
     // Create the slug from the filepath with this function
-    const slug = createFilePath({ node, getNode, basePath: `pages` });
+    const slug = createFilePath({ node, getNode, basePath: "pages" });
 
     // Add the new piece of data to the node. The key/values specifies here will be queryable with graphql
     // under the 'fields' property (node.fields.slug)
     createNodeField({
       node,
-      name: `slug`,
+      name: "slug",
       value: slug
     });
   }
@@ -39,7 +39,7 @@ exports.createPages = ({ graphql, actions }) => {
       result.data.allMarkdownRemark.edges.forEach(({ node }) => {
         createPage({
           path: node.fields.slug,
-          component: path.resolve(`./src/templates/blog-post.js`),
+          component: path.resolve("./src/templates/blog-post.js"),
           context: {
             // Data passed to context is available
             // in page queries as GraphQL variables.
