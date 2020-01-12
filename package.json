@@ -9,6 +9,9 @@
     "deploy": "aws s3 sync ./public s3://www.harrietryder.co.uk --delete",
     "clear": "aws-cloudfront-invalidate E23EK4WY752FT0"
   },
+  "engines": {
+    "node": "10.14"
+  },
   "dependencies": {
     "@emotion/core": "^10.0.27",
     "@fortawesome/fontawesome-svg-core": "^1.2.26",

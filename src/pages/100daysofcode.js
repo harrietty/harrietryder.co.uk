@@ -46,7 +46,11 @@ export default function HundredDaysOfCode() {
         setFetching(false);
       })
       .catch(e => {
-        setError(e);
+        if (e.response && e.response.data) {
+          setError(e.response.data);
+        } else {
+          setError("Something went wrong");
+        }
         setFetching(false);
         setTweets(null);
       });
@@ -80,8 +84,8 @@ export default function HundredDaysOfCode() {
         setUsername("");
       })
       .catch(e => {
-        if (e.response && e.response.status === 404) {
-          setError(`Could not find user ${username}`);
+        if (e.response && e.response.data) {
+          setError(e.response.data);
         } else {
           setError("Something went wrong");
         }
