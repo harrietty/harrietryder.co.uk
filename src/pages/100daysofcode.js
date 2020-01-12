@@ -151,14 +151,30 @@ export default function HundredDaysOfCode() {
             )}
             {showingVisitorTweets && visitorTweets && (
               <React.Fragment>
-                <h5>Showing {fetchedUsername}&apos;s tweets</h5>
+                <h5>
+                  Showing{" "}
+                  <a
+                    href={`https://twitter.com/${fetchedUsername}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {fetchedUsername}
+                  </a>
+                  &apos;s tweets
+                </h5>
                 {visitorTweets.map(t => (
                   <TwitterTweetEmbed tweetId={t.id_str} key={t.id} />
                 ))}
                 {visitorTweets.length === 0 && (
                   <p>
                     Sorry, we didn&apos;t find any #100DaysOfCode tweets for{" "}
-                    {fetchedUsername}
+                    <a
+                      href={`https://twitter.com/${fetchedUsername}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {fetchedUsername}
+                    </a>
                   </p>
                 )}
               </React.Fragment>
