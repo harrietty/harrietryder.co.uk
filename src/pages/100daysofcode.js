@@ -1,11 +1,15 @@
 import React, { useEffect, useState } from "react";
 import { TwitterTweetEmbed } from "react-twitter-embed";
 import axios from "axios";
+import { css } from "@emotion/core";
 import { BarLoader } from "react-spinners";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-
 import Layout from "../components/layout";
+
+const override = css`
+  margin: 20px auto;
+`;
 
 // TODO: change to prod
 const tweetFetchUrl =
@@ -16,25 +20,33 @@ export default function HundredDaysOfCode() {
   const [error, setError] = useState(null);
   const [fetching, setFetching] = useState(false);
   const [username, setUsername] = useState("");
+  const [fetchedUsername, setFetchedUsername] = useState("");
+  const [showingVisitorTweets, setShowingVisitorTweets] = useState(false);
+  const [visitorTweets, setVisitorTweets] = useState(null);
+
+  const fetchTweets = username => {
+    const headers = {
+      "x-api-key": "OGVd2RIxSX4VDFoXvj0CJ9fbXI3txIkE8xhdVd17"
+    };
+    return axios.get(
+      `${tweetFetchUrl}?username=${username}&filter=100daysofcode`,
+      { headers }
+    );
+  };
 
   useEffect(() => {
-    const fetchTweets = async () => {
-      try {
-        setFetching(true);
-        const headers = {
-          "x-api-key": "OGVd2RIxSX4VDFoXvj0CJ9fbXI3txIkE8xhdVd17"
-        };
-        const result = await axios.get(
-          `${tweetFetchUrl}?username=harri_etty&filter=100daysofcode`,
-          { headers }
-        );
+    setFetching(true);
+    fetchTweets("harri_etty")
+      .then(result => {
+        setError(null);
         setTweets(result.data);
-      } catch (e) {
+        setFetching(false);
+      })
+      .catch(e => {
         setError(e);
-      }
-      setFetching(false);
-    };
-    fetchTweets();
+        setFetching(false);
+        setTweets(null);
+      });
   }, []);
 
   const round1Tweets = [];
@@ -48,6 +60,28 @@ export default function HundredDaysOfCode() {
       }
     });
   }
+
+  const showVisitorTweets = e => {
+    e.preventDefault();
+    setFetching(true);
+    setShowingVisitorTweets(false);
+    setFetchedUsername("");
+    setVisitorTweets(null);
+    fetchTweets(username)
+      .then(result => {
+        setError(null);
+        setVisitorTweets(result.data);
+        setShowingVisitorTweets(true);
+        setFetching(false);
+        setFetchedUsername(username);
+        setUsername("");
+      })
+      .catch(e => {
+        setError(e);
+        setUsername("");
+        setFetching(false);
+      });
+  };
 
   return (
     <Layout>
@@ -94,7 +128,7 @@ export default function HundredDaysOfCode() {
                     />
                   </div>
                   <div className="column" style={{ margin: "5px" }}>
-                    <button className="button">
+                    <button className="button" onClick={showVisitorTweets}>
                       See my #100DaysOfCode Tweets!{" "}
                       <FontAwesomeIcon icon={faArrowRight} />
                     </button>
@@ -104,15 +138,34 @@ export default function HundredDaysOfCode() {
             </form>
             {error && (
               <React.Fragment>
-                <p className="not-working">
-                  Sorry, this isn&apos;t working at the moment
-                </p>
+                <p>Sorry, this isn&apos;t working at the moment</p>
                 <p>😞</p>
               </React.Fragment>
             )}
-            {fetching && <BarLoader color="lightseagreen" />}
-            {tweets && (
+            {fetching && (
+              <BarLoader
+                className="bar-loader"
+                color="lightseagreen"
+                css={override}
+              />
+            )}
+            {showingVisitorTweets && visitorTweets && (
               <React.Fragment>
+                <h5>Showing {fetchedUsername}&apos;s tweets</h5>
+                {visitorTweets.map(t => (
+                  <TwitterTweetEmbed tweetId={t.id_str} key={t.id} />
+                ))}
+                {visitorTweets.length === 0 && (
+                  <p>
+                    Sorry, we didn&apos;t find any #100DaysOfCode tweets for{" "}
+                    {fetchedUsername}
+                  </p>
+                )}
+              </React.Fragment>
+            )}
+            {tweets && !showingVisitorTweets && !fetching && (
+              <React.Fragment>
+                <h5>Showing harri_etty&apos;s tweets</h5>
                 <h3>Round 2:</h3>
                 {round2Tweets.map(t => (
                   <TwitterTweetEmbed tweetId={t.id_str} key={t.id} />
