@@ -13,7 +13,7 @@ const override = css`
 
 // TODO: change to prod
 const tweetFetchUrl =
-  "https://m6t8xt0vz8.execute-api.eu-west-1.amazonaws.com/dev/tweets";
+  "https://oq6bctsnfb.execute-api.eu-west-1.amazonaws.com/prod/tweets";
 
 export default function HundredDaysOfCode() {
   const [tweets, setTweets] = useState(null);
@@ -26,20 +26,23 @@ export default function HundredDaysOfCode() {
 
   const fetchTweets = username => {
     const headers = {
-      "x-api-key": "OGVd2RIxSX4VDFoXvj0CJ9fbXI3txIkE8xhdVd17"
+      "x-api-key": "4NZPNj2vXppBWJ9zFfNKa6tZ91P1fgg64Gd7Uqpg"
     };
-    return axios.get(
-      `${tweetFetchUrl}?username=${username}&filter=100daysofcode`,
-      { headers }
-    );
+    return axios
+      .get(`${tweetFetchUrl}?username=${username}&filter=100daysofcode`, {
+        headers
+      })
+      .then(r => {
+        return r.data;
+      });
   };
 
   useEffect(() => {
     setFetching(true);
     fetchTweets("harri_etty")
-      .then(result => {
+      .then(tweets => {
         setError(null);
-        setTweets(result.data);
+        setTweets(tweets);
         setFetching(false);
       })
       .catch(e => {
@@ -67,17 +70,21 @@ export default function HundredDaysOfCode() {
     setShowingVisitorTweets(false);
     setFetchedUsername("");
     setVisitorTweets(null);
+    setError(null);
     fetchTweets(username)
-      .then(result => {
-        setError(null);
-        setVisitorTweets(result.data);
+      .then(tweets => {
+        setVisitorTweets(tweets);
         setShowingVisitorTweets(true);
         setFetching(false);
         setFetchedUsername(username);
         setUsername("");
       })
       .catch(e => {
-        setError(e);
+        if (e.response && e.response.status === 404) {
+          setError(`Could not find user ${username}`);
+        } else {
+          setError("Something went wrong");
+        }
         setUsername("");
         setFetching(false);
       });
@@ -138,7 +145,7 @@ export default function HundredDaysOfCode() {
             </form>
             {error && (
               <React.Fragment>
-                <p>Sorry, this isn&apos;t working at the moment</p>
+                <p>{error}</p>
                 <p>😞</p>
               </React.Fragment>
             )}
@@ -179,7 +186,7 @@ export default function HundredDaysOfCode() {
                 )}
               </React.Fragment>
             )}
-            {tweets && !showingVisitorTweets && !fetching && (
+            {tweets && !showingVisitorTweets && !fetching && !error && (
               <React.Fragment>
                 <h5>Showing harri_etty&apos;s tweets</h5>
                 <h3>Round 2:</h3>

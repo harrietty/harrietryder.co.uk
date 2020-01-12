@@ -45,6 +45,11 @@ const IndexPage = ({ data }) => {
                     I <a href="#blog">blog</a> and speak about tech, my journey
                     into it, and tech education.
                   </p>
+                  <p>
+                    Follow my{" "}
+                    <Link to="/100daysofcode">#100DaysOfCode progress</Link>{" "}
+                    (and yours, too!)
+                  </p>
                 </div>
               </div>
             </section>
