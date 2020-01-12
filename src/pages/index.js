@@ -9,6 +9,7 @@ import talk from "../img/talk.jpg";
 import teaching from "../img/codebar.png";
 import nc from "../img/5.jpg";
 import techreturners from "../img/returners.jpeg";
+import "milligram";
 import "./index.css";
 
 import EducatorSection from "../components/EducatorSection";
@@ -16,16 +17,16 @@ import EducatorSection from "../components/EducatorSection";
 const IndexPage = ({ data }) => {
   return (
     <Layout>
-      <div className="container-fluid">
-        <div className="row justify-content-center">
-          <div className="col-md-10">
+      <div className="container">
+        <div className="row">
+          <div className="column column-80" style={{ margin: "auto" }}>
             <section>
               <h3>hello</h3>
               <div className="welcomeSection">
                 <img src={myFace} className="myFace" alt="My Face" />
                 <div className="intro">
                   <p>
-                    I'm a full-stack software engineer with a passion for
+                    I&apos;m a full-stack software engineer with a passion for
                     natural languages and education. I work in
                     JavaScript/NodeJS, React, Ruby, Rails, AWS. Currently 💜ing
                     all things JAMStack and working on a little side-project:{" "}

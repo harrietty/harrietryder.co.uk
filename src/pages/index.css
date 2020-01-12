@@ -118,3 +118,23 @@ tbody td {
   font-size: 0.9rem;
   font-weight: 200;
 }
+
+button {
+  background-color: #a44cb0;
+}
+
+/* ------------- 100 Days Of Code page -------- */
+
+.main-container {
+  text-align: center;
+}
+
+twitter-widget {
+  margin: 10px auto;
+}
+
+.not-working {
+  opacity: 0.8;
+  font-size: 1.3rem;
+  padding: 30px;
+}

@@ -91,14 +91,14 @@ const Layout = ({ meta, children }) => {
               title={data.site.siteMetadata.title}
               link={[
                 { rel: "shortcut icon", type: "image/png", href: `${favicon}` },
-                {
-                  rel: "stylesheet",
-                  href:
-                    "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css",
-                  integrity:
-                    "sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy",
-                  crossorigin: "anonymous"
-                },
+                // {
+                //   rel: "stylesheet",
+                //   href:
+                //     "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css",
+                //   integrity:
+                //     "sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy",
+                //   crossorigin: "anonymous"
+                // },
                 {
                   rel: "stylesheet",
                   href:

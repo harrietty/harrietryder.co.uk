@@ -10,25 +10,38 @@
     "clear": "aws-cloudfront-invalidate E23EK4WY752FT0"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.26",
+    "@fortawesome/free-solid-svg-icons": "^5.12.0",
+    "@fortawesome/react-fontawesome": "^0.1.8",
     "aws-cloudfront-invalidate": "^0.1.3",
-    "gatsby": "2.0.59",
+    "axios": "^0.19.1",
+    "gatsby": "^2.18.21",
     "gatsby-plugin-react-helmet": "^3.0.0",
-    "gatsby-plugin-sharp": "^2.0.5",
+    "gatsby-plugin-sharp": "^2.3.13",
     "gatsby-remark-copy-linked-files": "^2.0.11",
     "gatsby-remark-figure-caption": "^2.0.0",
     "gatsby-remark-images": "^2.0.3",
     "gatsby-remark-prismjs": "^3.2.4",
-    "gatsby-source-filesystem": "^2.0.1",
+    "gatsby-source-filesystem": "^2.1.46",
     "gatsby-transformer-remark": "^2.2.5",
     "gatsby-transformer-sharp": "^2.1.3",
+    "milligram": "^1.3.0",
     "prismjs": "^1.15.0",
     "prop-types": "^15.6.2",
     "react": "^16.5.1",
     "react-dom": "^16.5.1",
     "react-helmet": "^5.2.0",
+    "react-spinners": "^0.8.0",
+    "react-twitter-embed": "^3.0.3",
     "s3-deploy": "^1.1.6"
   },
   "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-plugin-import": "^2.20.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.17.0",
+    "eslint-plugin-react-hooks": "^1.7.0",
     "gh-pages": "^2.0.1"
   }
 }
