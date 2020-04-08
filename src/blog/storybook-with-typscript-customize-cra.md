@@ -11,7 +11,7 @@ description: Installing Storybook is a breeze, they said
 
 ![Storybook UI](./storybook/storybook-example.png)
 
-Storybook is like a gallery of all your components (or at least, the ones you've added to Storybook). Out of the box, you can view your components in a folder-like structure along in the left sidebar, and you can choose to add different variations (in React, this would mean passing different `props`) of each component to your Storybook.
+Storybook is like a gallery of all your components (or at least, the ones you've added to Storybook). Out of the box, you can view your components in a folder-like structure along in the left sidebar, and you can choose to add different variations (in React, this would mean passing different `props`) of each component to each "Story" in your Storybook.
 
 You can also choose to show composite components. For example, if `<ListItem>` usually lives within a `<List>` component it would make sense to document them both in Storybook so people can see how `<ListItem>` is commonly used. In fact, the <a href="https://www.learnstorybook.com/intro-to-storybook/react/en/composite-component/" target="_blank">Storybook docs</a> show a great example of this.
 
@@ -23,7 +23,7 @@ Instead of building a whole page first and creating components as and when you n
 
 The <a href="https://storybook.js.org/docs/basics/introduction/" target="_blank">Storybook docs</a> have great guides for most setups. If you used <a href="https://reactjs.org/docs/create-a-new-react-app.html#create-react-app" target="_blank">Create React App</a> for creating your initial React project, you can even get the `@storybook/preset-create-react-app` package to install and configure Storybook for you, and it does a perfect job.
 
-However, our setup was a little different - we used Create React App, but unfortunately with <a href="https://github.com/arackaf/customize-cra" target="_blank">Customize CRA</a> to customize the default webpack configuration, and also with TypeScript (💖).
+However, our setup was a little different - the original project was created with Create React App, but we've added <a href="https://github.com/arackaf/customize-cra" target="_blank">Customize CRA</a> to customize the default webpack configuration, and we also use TypeScript (💖).
 
 So setting up Storybook was a little more complicated.
 
@@ -31,7 +31,7 @@ So setting up Storybook was a little more complicated.
 
 Firstly, what is customize-CRA?
 
-Customize-CRA is a project that allows you to customize the webpack configuration object that create-react-app creates and keeps hidden from you (unless you eject).
+<a href="https://github.com/arackaf/customize-cra" target="_blank">Customize CRA</a> is a project that allows you to customize the webpack configuration object that `create-react-app` creates and keeps hidden from you (unless you eject).
 
 When you run `create-react-app`, a brand new React project is spun up for you, but most of the configuration is tidied away out of sight. There's no `webpack.config.js` file, so you have very little control over how your files are bundled. This is fine most of the time, CRA is officially maintained and supported by Facebook (the React team) so you're guaranteed it's gonna do a pretty good job of sorting our your configuration for you. It handles most things you could imagine, including images, fonts, SASS, ES6+ language features and a dev server.
 
@@ -140,7 +140,7 @@ module.exports = {
 };
 ```
 
-If you were adding `ts-loader` or `babel-loader` here before, note that there's no need to if you're combining your project's webpack rules with Storybook's default configuration - the rule for `ts-loader` or `babel-loader` are getting added from your project's webpack config object now 😄
+If you were adding `ts-loader` or `babel-loader` here before, note that there's no need to if you're combining your project's webpack rules with Storybook's default configuration - the rule for `ts-loader` or `babel-loader` is getting added from your project's webpack config object now 😄
 
 ### Okay, but what about Customize-CRA?
 
