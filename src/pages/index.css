@@ -123,6 +123,11 @@ button {
   background-color: #a44cb0;
 }
 
+code {
+  font-weight: 600;
+  font-size: 100%;
+}
+
 /* ------------- 100 Days Of Code page -------- */
 
 .main-container {

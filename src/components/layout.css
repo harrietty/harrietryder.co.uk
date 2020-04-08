@@ -59,6 +59,10 @@ header h1 {
   padding-bottom: 17px;
 }
 
+h1 {
+  font-size: 4rem;
+}
+
 #blogArea {
   line-height: 30px;
   width: 80%;
@@ -126,6 +130,14 @@ a:active,
 a:hover,
 .mediaIcon a i:hover {
   color: #773780;
+}
+
+a.no-link,
+a.no-link:link,
+a.no-link:visited,
+a.no-link:active {
+  color: #606c76;
+  font-weight: 200;
 }
 
 a.headerLink:hover {
