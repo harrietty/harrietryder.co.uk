@@ -1,7 +1,7 @@
 ---
 title: What I Learned This Week - Hiding Functionality Behind Feature Flags with Launch Darkly
 date: 2020-03-28
-tags: [learning, feature-flags, launch-darkly, frontend]
+tags: [learning, feature-flags, launch-darkly, frontend, WILTW]
 description: How to toggle functionality on/off for all users, or specific users, using Launch Darkly
 ---
 
@@ -72,11 +72,11 @@ Imagine your backend has already done something like this upon signup to create 
 
 ```javascript
 const user = {
-  "key": "aa0ceb",
-  "country": "GB",
-  "custom": {
-    "groups": ["Google", "Microsoft"]
-  }
+  key: "aa0ceb",
+  country: "GB",
+  custom: {
+    groups: ["Google", "Microsoft"],
+  },
 };
 
 ldClient.identify(user);
@@ -87,22 +87,22 @@ Through the Launch Darkly dashboard you've enabled the "Gift Aid" feature for al
 Your frontend React Application is wrapped in a Launch Darkly provider at the root:
 
 ```javascript
-import { withLDProvider } from 'launchdarkly-react-client-sdk';
+import { withLDProvider } from "launchdarkly-react-client-sdk";
 
-export default withLDProvider({ 
-  clientSideID: 'your-client-side-id'
+export default withLDProvider({
+  clientSideID: "your-client-side-id",
 })(App);
 ```
 
 When a users signs into your frontend application, you need to match them with the Launch Darkly user and retrieve their flags. In your sign-in success flow (within your wrapped `App` component) you'll do something like this, to identify your current signed-in user with Launch Darkly:
 
 ```javascript
-import React from 'react';
-import { useLDClient } from 'launchdarkly-react-client-sdk';
+import React from "react";
+import { useLDClient } from "launchdarkly-react-client-sdk";
 
 const App = () => {
   const ldClient = useLDClient();
-  
+
   const onLoginSuccessful = (user) => ldClient.identify({ key: user.id });
 
   return (
@@ -119,9 +119,9 @@ If you don't have users, and you just have flags for your entire application, th
 Anywhere in your wrapped application you can use the `useFlags` hook to obtain the flags for the current identified user or for the application as a whole. NB there is also a higher order component pattern that you can use - but in my view hooks are easier and nicer to use.
 
 ```javascript
-import React from 'react';
+import React from "react";
 
-import { useFlags } from 'launchdarkly-react-client-sdk';
+import { useFlags } from "launchdarkly-react-client-sdk";
 
 const Header = () => {
   const { darkMode } = useFlags();
