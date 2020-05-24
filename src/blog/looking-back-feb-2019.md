@@ -3,6 +3,8 @@ title: Looking back at February
 date: 2019-03-03
 tags: [review, personal, life]
 description: My regular end-of-month blog post, this time featuring CodeFirst:Girls, a new side project, and lots of good books
+category: life
+technical: false
 ---
 
 ![Morning light in the living room](feb-2019/light.png)

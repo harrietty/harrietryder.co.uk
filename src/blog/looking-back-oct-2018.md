@@ -3,6 +3,8 @@ title: Looking back at October
 date: 2018-11-01
 tags: [review, personal, life]
 description: My monthly round-up, this month including running, reading, and reflecting on lots of goals from the past month
+category: life
+technical: false
 ---
 
 October seems to have absolutely flown by, and it's been one of those months where I feel like achieved a lot and made the most of all 31 days, but without feeling exhausted at the end of it all. There have been evenings I've wished there were a couple more hours in the day to unwind and read a book or relax, but overall I've happy with the things I've prioritised.

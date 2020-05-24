@@ -3,6 +3,8 @@ title: "How does RSpec work? Part 2: Constants and Exceptions"
 date: 2019-02-19
 tags: [code, howto, technical, tutorial, ruby, rspec]
 description: In my quest to understand the mysterious workings of RSpec, I begin reimplementing it from scratch, documenting my learnings along the way. Join me in part 2 for more magic!
+category: fundamentals
+technical: true
 ---
 
 ![](rubies2.jpg)

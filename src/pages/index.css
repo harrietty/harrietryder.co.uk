@@ -14,6 +14,39 @@
   padding: 0px 20px;
 }
 
+.grid-container-technical {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-row-gap: 20px;
+  grid-column-gap: 30px;
+}
+
+.grid-container-general {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-row-gap: 20px;
+  grid-column-gap: 30px;
+}
+
+.post-section-heading {
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  -moz-text-decoration-style: wavy;
+  -webkit-text-decoration-style: wavy;
+  text-decoration-color: lightseagreen;
+  font-size: 20px;
+}
+
+.post-section-title {
+  margin-bottom: 30px;
+}
+
+.post-section-description {
+  font-size: 13px;
+}
+
 .postDate {
   font-size: 0.7em;
   margin-left: 10px;

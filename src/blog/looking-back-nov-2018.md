@@ -3,6 +3,8 @@ title: Looking back at November
 date: 2018-12-01
 tags: [review, personal, life]
 description: My monthly end-of-month round-up, this time featuring lots of running, a night at the ballet, bash shell scripting and an engagement (mine!!)
+category: life
+technical: false
 ---
 
 ![Autumn Colours on the Trans Pennine Trail](./nov-2018/trail.png)

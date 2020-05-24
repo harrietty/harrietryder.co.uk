@@ -18,13 +18,13 @@ const Header = ({ title }) => (
 
 class SocialBanner extends React.Component {
   state = {
-    bannerColor: ""
+    bannerColor: "",
   };
 
   componentDidMount() {
     if (window.innerWidth <= 750) {
       this.setState({
-        bannerColor: "lightBg"
+        bannerColor: "lightBg",
       });
     }
   }
@@ -84,7 +84,7 @@ const Layout = ({ meta, children }) => {
           }
         }
       `}
-      render={data => {
+      render={(data) => {
         return (
           <div>
             <Helmet
@@ -94,65 +94,65 @@ const Layout = ({ meta, children }) => {
                 {
                   rel: "stylesheet",
                   href:
-                    "https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"
-                }
+                    "https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css",
+                },
               ]}
               meta={[
                 {
                   name: "viewport",
                   content: "width=device-width",
-                  "initial-scale": "1.0"
+                  "initial-scale": "1.0",
                 },
                 {
                   name: "description",
-                  content: "Personal blog and portfolio of Harriet Ryder"
+                  content: "Personal blog and portfolio of Harriet Ryder",
                 },
                 {
                   name: "keywords",
                   content:
-                    "coding, javascript, learning, ReactJS, React, Python, Ruby, Rails, Node, NodeJS, programming, software development"
+                    "coding, javascript, learning, ReactJS, React, Python, Ruby, Rails, Node, NodeJS, programming, software development",
                 },
                 {
                   name: "twitter:card",
-                  content: "summary"
+                  content: "summary",
                 },
                 {
                   name: "twitter:creator",
-                  content: "@harri_etty"
+                  content: "@harri_etty",
                 },
                 {
                   name: "twitter:title",
-                  content: twitterTitle
+                  content: twitterTitle,
                 },
                 {
                   name: "twitter:description",
-                  content: twitterDescription
+                  content: twitterDescription,
                 },
                 {
                   name: "twitter:image",
-                  content: "https://www.harrietryder.co.uk/me.png"
+                  content: "https://www.harrietryder.co.uk/me.png",
                 },
                 {
                   property: "og:title",
-                  content: twitterTitle
+                  content: twitterTitle,
                 },
                 {
                   property: "og:image",
-                  content: "https://www.harrietryder.co.uk/me.png"
+                  content: "https://www.harrietryder.co.uk/me.png",
                 },
                 {
                   property: "og:description",
-                  content: twitterDescription
+                  content: twitterDescription,
                 },
                 {
                   property: "og:url",
-                  content: `https://www.harrietryder.co.uk${slug}`
-                }
+                  content: `https://www.harrietryder.co.uk${slug}`,
+                },
               ]}
               script={[
                 {
-                  src: "https://use.fontawesome.com/e835c50e09.js"
-                }
+                  src: "https://use.fontawesome.com/e835c50e09.js",
+                },
               ]}
             />
             <Header title={data.site.siteMetadata.title} />
@@ -160,9 +160,9 @@ const Layout = ({ meta, children }) => {
             <div
               style={{
                 margin: "0 auto",
-                maxWidth: 960,
+                maxWidth: 1250,
                 padding: "0px 1.0875rem 1.45rem",
-                paddingTop: 0
+                paddingTop: 0,
               }}
             >
               {children}
@@ -176,11 +176,11 @@ const Layout = ({ meta, children }) => {
 
 Layout.propTypes = {
   children: PropTypes.object,
-  meta: PropTypes.object
+  meta: PropTypes.object,
 };
 
 Header.propTypes = {
-  title: PropTypes.string
+  title: PropTypes.string,
 };
 
 export default Layout;

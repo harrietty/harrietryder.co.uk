@@ -3,6 +3,8 @@ title: 6 Months of Ant Design
 date: 2020-05-19
 tags: [frontend, javascript, React]
 description: My thoughts on diving deep into Ant Design over the past few months
+category: react
+technical: true
 ---
 
 ![Ant Design Components](./technical/antd.png)

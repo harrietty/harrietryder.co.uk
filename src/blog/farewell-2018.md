@@ -3,6 +3,8 @@ title: 2018 in 5 lists
 date: 2018-12-27
 tags: [reflection, annual-review, personal, new-year]
 description: In which I reflect on the year of 2018 with a series of lists, because the end of the year is the number 1 season for list making and I got thoroughly caught up in the frenzy.
+category: life
+technical: false
 ---
 
 ![New years eve fun](./2018-review/nye.jpg)

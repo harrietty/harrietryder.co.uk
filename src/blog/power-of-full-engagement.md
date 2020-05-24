@@ -3,6 +3,8 @@ title: The Power of Full Engagement
 date: 2019-04-25
 tags: [review, books, reading, inspiration, values]
 description: I read an interesting book and want to talk about it
+category: books
+technical: false
 ---
 
 ![The Power of Full Engagement](./april-2019/engagement.png)

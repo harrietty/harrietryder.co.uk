@@ -3,6 +3,8 @@ title: Looking back at September
 date: 2018-10-09
 tags: [review, personal, life]
 description: My regular end-of-month review, this time featuring the Camino de Santiago, a trip back to Northcoders, and a month in our new house!
+category: life
+technical: false
 ---
 
 Wow, where did September go? Well, most of it disappeared in Spain, where I spent 2 weeks [walking 300km of the Camino de Santiago](/blog/camino-de-santiago/). But what about the other two weeks at the beginning and the end? I really struggle to remember much of anything, but according to my diary things did happen!

@@ -3,8 +3,9 @@ title: The Three Month Rule of a New Job
 date: 2020-03-07
 tags: [career, life, personal, learning, reflection]
 description: Why I always tell people to expect to feel a bit useless for the first 3 months in a new job, and how to feel better about it.
+category: career
+technical: false
 ---
-
 
 I've always maintained that it takes around 3 months, minimum, to begin to feel like you're really acing it in a new job. I'm speaking from the point of view of a software engineer, but perhaps it also holds true for any kind of more complex knowledge work, especially work that requires acquiring domain knowledge and close collaborative teamwork to do well.
 
@@ -29,7 +30,6 @@ I'm not saying that after 3 months, you should feel like you can do the job with
 I've changed jobs a few times during my career as as a software developer and only once did I feel like I could already do the job well on my first day. In retrospect, that was great for my employer and great for my self confidence, but not great for my personal/career growth.
 
 On the other hand, I've moved into roles where I very acutely felt that sense of "omg they're gonna fire me before I even hit the 3 month mark", which was challenging for my self-confidence but amazingly I never got fired, and grew a tonne instead.
-
 
 ## What you can do
 

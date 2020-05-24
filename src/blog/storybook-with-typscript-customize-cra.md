@@ -3,6 +3,8 @@ title: What I Learned This Week - Installing Storybook with Typescript, React, a
 date: 2020-04-04
 tags: [react, typescript, storybook, learning, frontend]
 description: Installing Storybook is a breeze, they said
+category: WILTW
+technical: false
 ---
 
 ### What is Storybook?

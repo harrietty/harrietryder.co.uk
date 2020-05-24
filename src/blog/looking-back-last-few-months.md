@@ -3,6 +3,8 @@ title: Looking back at the last few months
 date: 2019-10-21
 tags: [review, personal, life]
 description: I've been quiet...
+category: life
+technical: false
 ---
 
 This is a quick post just to say I'm still alive.

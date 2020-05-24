@@ -3,6 +3,8 @@ title: My 2019 Goals - How did I do?
 date: 2019-12-22
 tags: [goals, personal, new-year]
 description: In which I berate myself for not running 2 marathons, in fact not even running 1 marathon.
+category: life
+technical: false
 ---
 
 ![Giving my biggest conference talk to date. Not a goal I'd set but an achievement nonetheless!](./2019-goals-review/talk.jpg)

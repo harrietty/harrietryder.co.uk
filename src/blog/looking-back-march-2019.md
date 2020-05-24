@@ -3,6 +3,8 @@ title: Looking back at March
 date: 2019-04-03
 tags: [review, personal, life]
 description: Teaching, reading, a whole lot of eating, and... a new job!
+category: life
+technical: false
 ---
 
 So I've been sitting on a little bit of news for a while, which is now out in the world - I started a new job in the middle of March!

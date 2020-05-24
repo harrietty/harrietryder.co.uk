@@ -3,6 +3,8 @@ title: 2020 Goals
 date: 2020-01-10
 tags: [goals, personal, new-year]
 description: Trying to keep myself accountable in 2020...
+category: life
+technical: false
 ---
 
 Just a little list of ambitious goals for 2020. Not shouting about these, just wanted to have them written down somewhere so I can check back, mark progress and keep motivated!

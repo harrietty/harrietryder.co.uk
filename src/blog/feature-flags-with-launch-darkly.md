@@ -3,6 +3,8 @@ title: What I Learned This Week - Hiding Functionality Behind Feature Flags with
 date: 2020-03-28
 tags: [learning, feature-flags, launch-darkly, frontend, WILTW]
 description: How to toggle functionality on/off for all users, or specific users, using Launch Darkly
+category: WILTW
+technical: false
 ---
 
 ### What are feature flags?

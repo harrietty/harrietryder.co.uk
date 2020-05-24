@@ -1,8 +1,10 @@
 ---
-title: 'How does RSpec work? Part 1: Blocks and Contexts'
+title: "How does RSpec work? Part 1: Blocks and Contexts"
 date: 2019-02-16
 tags: [code, howto, technical, tutorial, ruby, rspec]
 description: When I'm learning a new language, or trying to learn it more deeply, I love reimplementing common libraries. In this post, I take a look at RSpec, a library whose workings appear to make no sense, in an attempt to get to grips with Metaprogramming in Ruby!
+category: fundamentals
+technical: true
 ---
 
 ![](rubies.jpg)
@@ -147,7 +149,7 @@ RSpec.describe 'The function add' do
 end
 ```
 
-Well, what's happening is that the block which is passed to `describe` must be being evaluated in a context which *does* have the `it` method available. The implementation of `describe` could look something like this:
+Well, what's happening is that the block which is passed to `describe` must be being evaluated in a context which _does_ have the `it` method available. The implementation of `describe` could look something like this:
 
 ```ruby
 class FooSpec

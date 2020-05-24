@@ -4,6 +4,8 @@ date: 2018-03-01
 tags: [careers, job-hunting, softwaredevelopment]
 frontimage: myface.jpg
 description: In which I talk about my experiences interviewing for a software engineering role.
+category: career
+technical: false
 ---
 
 A couple of months ago, I decided it was time for a change of direction and left my job at [Northcoders](https://northcoders.com/) to pursue programming full time.

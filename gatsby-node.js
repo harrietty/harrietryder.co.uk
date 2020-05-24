@@ -14,7 +14,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     createNodeField({
       node,
       name: "slug",
-      value: slug
+      value: slug,
     });
   }
 };
@@ -22,7 +22,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
 // This is required to create the individual pages that MD files should generate
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions;
-  return new Promise((resolve, reject) => {
+  return new Promise((resolve) => {
     graphql(`
       {
         allMarkdownRemark {
@@ -35,7 +35,7 @@ exports.createPages = ({ graphql, actions }) => {
           }
         }
       }
-    `).then(result => {
+    `).then((result) => {
       result.data.allMarkdownRemark.edges.forEach(({ node }) => {
         createPage({
           path: node.fields.slug,
@@ -43,8 +43,8 @@ exports.createPages = ({ graphql, actions }) => {
           context: {
             // Data passed to context is available
             // in page queries as GraphQL variables.
-            slug: node.fields.slug
-          }
+            slug: node.fields.slug,
+          },
         });
       });
       resolve();

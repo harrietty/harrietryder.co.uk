@@ -4,6 +4,8 @@ date: 2018-08-28
 tags: [review, personal, life]
 frontimage: myface.jpg
 description: My regular monthly blogpost, including a new house, lots of paint, visitors, running, and a get-together with other women in tech
+category: life
+technical: false
 ---
 
 August has been a top month. One of the best months ever, probably!

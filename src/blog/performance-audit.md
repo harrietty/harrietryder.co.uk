@@ -1,8 +1,10 @@
 ---
 title: Achieving a 100% Performance Audit on Conju-Gator
 date: 2019-05-02
-tags: [performance, audit, lighthouse]
+tags: [performance, audit, lighthouse, frontend]
 description: "Spoiler: I actually only reached 98% and that's okay with me"
+category: frontend
+technical: false
 ---
 
 ![Google Chrome's Lighthouse Audit Tool](./may-2019/lighthouse.png)

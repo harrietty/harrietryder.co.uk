@@ -3,6 +3,8 @@ title: My experience with the AWS Developer Associate exam
 date: 2019-10-22
 tags: [AWS, learning, cloud, exam, training]
 description: My general take on the experience - is it worth it, should you do it, what's involved?
+category: devops
+technical: true
 ---
 
 Earlier this year I got my <a href="https://aws.amazon.com/certification/certified-developer-associate/" target="_blank">AWS Developer Associate</a> certificate. A few months later, after answering a bunch of questions from a few people who wanted to know what was involved and whether it was worth it, I thought I'd pull together a few thoughts.

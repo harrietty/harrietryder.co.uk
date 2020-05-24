@@ -10,12 +10,37 @@ import talk from "../img/talk.jpg";
 import teaching from "../img/codebar.png";
 import nc from "../img/5.jpg";
 import techreturners from "../img/returners.jpeg";
+import { generalCategories, technicalCategories } from "../models/categories";
 import "milligram";
 import "./index.css";
 
 import EducatorSection from "../components/EducatorSection";
 
 const IndexPage = ({ data }) => {
+  const generalCategoryKeys = Object.keys(generalCategories);
+  const techCategoryKeys = Object.keys(technicalCategories);
+  const generalPostsByCategory = {};
+  const technicalPostsByCategory = {};
+  data.blogposts.edges.forEach((post) => {
+    const category = post.node.frontmatter.category;
+    const isGeneral = generalCategoryKeys.includes(category);
+    const isTechnical =
+      post.node.frontmatter.technical && techCategoryKeys.includes(category);
+    if (isGeneral) {
+      if (generalPostsByCategory[category]) {
+        generalPostsByCategory[category].push(post);
+      } else {
+        generalPostsByCategory[category] = [post];
+      }
+    } else if (isTechnical) {
+      if (technicalPostsByCategory[category]) {
+        technicalPostsByCategory[category].push(post);
+      } else {
+        technicalPostsByCategory[category] = [post];
+      }
+    }
+  });
+
   return (
     <Layout>
       <div className="container">
@@ -28,8 +53,8 @@ const IndexPage = ({ data }) => {
                 <div className="intro">
                   <p>
                     Hi! I&apos;m a software engineer with a passion for natural
-                    languages and education. Currently working as a senior
-                    front-end developer in a React/Redux/Typescript stack,{" "}
+                    languages and education. Currently working as a front-end
+                    developer in a React/Redux/Typescript stack,{" "}
                     <a href="#education">teaching</a> software development in
                     the evenings and working on too many sideprojects, most
                     recently:{" "}
@@ -53,27 +78,98 @@ const IndexPage = ({ data }) => {
                 </div>
               </div>
             </section>
-
-            <section id="blog">
-              <h3>blog</h3>
-              <ul>
-                {data.blogposts.edges.map((p, i) => (
-                  <li key={i}>
-                    <Link to={p.node.fields.slug} key={i}>
-                      {p.node.frontmatter.title}
-                    </Link>
-                    <span className="postDate">
-                      ({p.node.frontmatter.date})
-                    </span>
-                    <p className="postDescription">
-                      {p.node.frontmatter.description}
-                    </p>
-                  </li>
-                ))}
-              </ul>
+          </div>
+        </div>
+        <section id="blog">
+          <div className="row">
+            <div className="column column-80" style={{ margin: "auto" }}>
+              <h3>writing</h3>
+            </div>
+          </div>
+          <div className="row">
+            <div className="column column 95" style={{ margin: "auto" }}>
+              <div className="grid-container-technical">
+                {techCategoryKeys.map((categoryKey) => {
+                  return (
+                    <div key={categoryKey}>
+                      <h5 className="post-section-heading">
+                        {technicalCategories[categoryKey].title}
+                        <span style={{ padding: "0 5px" }}>
+                          {technicalCategories[categoryKey].emoji}
+                        </span>
+                      </h5>
+                      <ul>
+                        {technicalPostsByCategory[categoryKey] ? (
+                          technicalPostsByCategory[categoryKey]
+                            .slice(0, 5)
+                            .map((p) => {
+                              return (
+                                <li
+                                  className="post-section-title"
+                                  key={p.node.frontmatter.title}
+                                >
+                                  <Link to={p.node.fields.slug}>
+                                    {p.node.frontmatter.title}
+                                  </Link>
+                                  <span className="postDate">
+                                    ({p.node.frontmatter.date})
+                                  </span>
+                                </li>
+                              );
+                            })
+                        ) : (
+                          <p>No posts to display</p>
+                        )}
+                        {}
+                      </ul>
+                    </div>
+                  );
+                })}
+              </div>
+              <div className="grid-container-general">
+                {generalCategoryKeys.map((categoryKey) => {
+                  return (
+                    <div key={categoryKey}>
+                      <h5 className="post-section-heading">
+                        {generalCategories[categoryKey].title}
+                        <span style={{ padding: "0 5px" }}>
+                          {generalCategories[categoryKey].emoji}
+                        </span>
+                      </h5>
+                      <ul>
+                        {generalPostsByCategory[categoryKey] ? (
+                          generalPostsByCategory[categoryKey]
+                            .slice(0, 5)
+                            .map((p) => {
+                              return (
+                                <li
+                                  className="post-section-title"
+                                  key={p.node.frontmatter.title}
+                                >
+                                  <Link to={p.node.fields.slug}>
+                                    {p.node.frontmatter.title}
+                                  </Link>
+                                  <span className="postDate">
+                                    ({p.node.frontmatter.date})
+                                  </span>
+                                </li>
+                              );
+                            })
+                        ) : (
+                          <p>No posts to display</p>
+                        )}
+                        {}
+                      </ul>
+                    </div>
+                  );
+                })}
+              </div>
               (<Link to="/blog">See all</Link>)
-            </section>
-
+            </div>
+          </div>
+        </section>
+        <div className="row">
+          <div className="column column-80" style={{ margin: "auto" }}>
             <section>
               <h3>talks</h3>
               <ul className="talksList">
@@ -410,13 +506,12 @@ const IndexPage = ({ data }) => {
 };
 
 IndexPage.propTypes = {
-  data: PropTypes.object
+  data: PropTypes.object,
 };
 
 export const query = graphql`
   query {
     blogposts: allMarkdownRemark(
-      limit: 5
       filter: { fileAbsolutePath: { regex: "/blog/" } }
       sort: { fields: [frontmatter___date], order: DESC }
     ) {
@@ -429,6 +524,8 @@ export const query = graphql`
             title
             date(formatString: "Do MMM, YYYY")
             description
+            category
+            technical
           }
         }
       }
@@ -445,6 +542,8 @@ export const query = graphql`
             title
             description
             frontimage
+            category
+            technical
           }
         }
       }

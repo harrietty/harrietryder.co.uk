@@ -3,6 +3,8 @@ title: What I Learned This Week - Merge Conflicts in Your Lockfile 😱
 date: 2020-04-29
 tags: [learning, frontend, node, npm, javascript, WILTW]
 description: If, like me, you've spent hours of your life fixing merge conflicts in your package-lock.json or yarn.lock file, this post might make you cry.
+category: WILTW
+technical: false
 ---
 
 This is gonna be a short but sweet post.

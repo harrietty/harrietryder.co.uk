@@ -3,6 +3,8 @@ title: Looking back at April
 date: 2019-05-07
 tags: [review, personal, life]
 description: Mostly being ill, also some book-related fun!
+category: life
+technical: false
 ---
 
 This post's going to be a short one, mostly by virtue of having done very little of interest during April.

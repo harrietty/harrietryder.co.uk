@@ -3,6 +3,8 @@ title: Quarter of the way through 2020!
 date: 2020-04-10
 tags: [review, personal]
 description: 3 Months that, somehow, make 2019 look blissful
+category: life
+technical: false
 ---
 
 Oh, how fresh-faced and naive I was. At the end of 2019, I sat down and <a href="https://www.harrietryder.co.uk/blog/farewell-2019/" target="_blank">reflected on the year just passed</a> and, feeling buoyant and optimistic, wrote some <a href="https://www.harrietryder.co.uk/blog/2020-goals-progress/" target="_blank">rough goals</a> for 2020.

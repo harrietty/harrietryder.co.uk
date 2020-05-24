@@ -3,6 +3,8 @@ title: What I Learned This Week - Optimistic Concurrency
 date: 2020-05-11
 tags: [learning, frontend, javascript, WILTW]
 description: What is optimistic concurrency, how can it be implemented, and what does it mean for the frontend?
+category: WILTW
+technical: false
 ---
 
 ### What is Optimistic Concurrency? First, a secnario...

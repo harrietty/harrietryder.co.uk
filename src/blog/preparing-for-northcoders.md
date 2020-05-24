@@ -4,6 +4,8 @@ date: 2016-04-03
 tags: [northcoders, bootcamp, learning, coding]
 frontimage: myface.jpg
 description: In which, having been offered a place on a coding bootcamp, I attempt to prep as much as possible and brush up on everything I've been studying so far
+category: career
+technical: false
 ---
 
 It’s Sunday afternoon and tomorrow, Monday, is the first day of the course at [Northcoders](https://www.northcoders.com). To say I’m excited is an understatement. I still can’t really believe it’s happening, or believe what it means for the future - that I get to turn a hobby I love into a career. Anyway, over the last few weeks I’ve had a bit of time off work which has been nice and I’ve been preparing as much as possible. I thought I’d just share some of the ways I’ve been preparing and some of the resources I’ve used - there’s so much out there for people learning to code that I’m sure my list barely scrapes the surface, but maybe it’ll be of interest!

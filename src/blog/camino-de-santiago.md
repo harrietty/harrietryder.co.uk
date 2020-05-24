@@ -3,6 +3,8 @@ title: Walking the Camino de Santiago
 date: 2018-09-30
 tags: [holidays, travel, health, fitness]
 description: In which Mauro and I walk a million kilometers, experience a range of leg-related injuries and see a large amount of Spanish countryside.
+category: travel
+technical: false
 ---
 
 Last weekend, Mauro and I got back from our main holiday of the year which was walking the Camino de Santiago. The Camino is a long distance pilgrimage route primarily in the North of Spain, leading to the city of Santiago de Compostela where the remains of St. James were once discovered. There are paths to the city from all over the place, including Portugal, Madrid and Valencia and other trails from across Europe join up with the route as well. The main path, which we followed, starts over the border in France although we didn't have time to walk the entire distance, so we chose a 300km section that starts in Léon, ending in Santiago.

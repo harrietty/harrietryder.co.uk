@@ -3,6 +3,8 @@ title: Looking back at January
 date: 2019-02-05
 tags: [review, personal, life]
 description: My regular monthly round-up, this month including snow, mentoring, a trip to london and AWS training.
+category: life
+technical: false
 ---
 
 ![We had snow!](./jan-2019/snow.png)
