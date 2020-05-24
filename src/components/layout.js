@@ -90,7 +90,11 @@ const Layout = ({ meta, children }) => {
             <Helmet
               title={data.site.siteMetadata.title}
               link={[
-                { rel: "shortcut icon", type: "image/png", href: `${favicon}` },
+                {
+                  rel: "shortcut icon",
+                  type: "image/png",
+                  href: `${favicon}`,
+                },
                 {
                   rel: "stylesheet",
                   href:
@@ -151,7 +155,8 @@ const Layout = ({ meta, children }) => {
               ]}
               script={[
                 {
-                  src: "https://use.fontawesome.com/e835c50e09.js",
+                  src: "https://kit.fontawesome.com/9836b89613.js",
+                  crossorigin: "anonymous",
                 },
               ]}
             />

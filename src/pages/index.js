@@ -1,4 +1,5 @@
 import React from "react";
+import styled from "styled-components";
 import PropTypes from "prop-types";
 import { Link, graphql } from "gatsby";
 import Layout from "../components/layout";
@@ -10,12 +11,64 @@ import talk from "../img/talk.jpg";
 import teaching from "../img/codebar.png";
 import nc from "../img/5.jpg";
 import techreturners from "../img/returners.jpeg";
+import { PostDate } from "../components/shared/styled";
 import { generalCategories, technicalCategories } from "../models/categories";
 import "milligram";
 import "./index.css";
 
 import EducatorSection from "../components/EducatorSection";
 
+const PostsGridContainer = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-row-gap: 0px;
+  grid-column-gap: 30px;
+`;
+
+const PostsList = styled.ul`
+  flex-grow: 1;
+  height: 100%;
+  background: oldlace;
+  padding: 25px 7px;
+  border-radius: 9px;
+  .with-border {
+    border-right: 1px solid lightgray;
+  }
+  li {
+    margin-bottom: 30px;
+  }
+`;
+
+const PublishingPlatform = styled.span`
+  color: #adadad;
+  padding-left: 5px;
+  font-size: 12px;
+`;
+
+const PostEmoji = styled.span`
+  padding: 0 10px;
+  text-decoration: none;
+  font-size: 26px;
+`;
+
+const PostHeading = styled.h5`
+  font-size: 20px;
+  margin-left: 20px;
+`;
+
+const PostTitle = styled.span`
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  -moz-text-decoration-style: wavy;
+  -webkit-text-decoration-style: wavy;
+  text-decoration-color: lightseagreen;
+`;
+
+const GridItem = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
 const IndexPage = ({ data }) => {
   const generalCategoryKeys = Object.keys(generalCategories);
   const techCategoryKeys = Object.keys(technicalCategories);
@@ -41,6 +94,7 @@ const IndexPage = ({ data }) => {
     }
   });
 
+  console.log(technicalPostsByCategory);
   return (
     <Layout>
       <div className="container">
@@ -88,82 +142,72 @@ const IndexPage = ({ data }) => {
           </div>
           <div className="row">
             <div className="column column 95" style={{ margin: "auto" }}>
-              <div className="grid-container-technical">
-                {techCategoryKeys.map((categoryKey) => {
-                  return (
-                    <div key={categoryKey}>
-                      <h5 className="post-section-heading">
-                        {technicalCategories[categoryKey].title}
-                        <span style={{ padding: "0 5px" }}>
-                          {technicalCategories[categoryKey].emoji}
-                        </span>
-                      </h5>
-                      <ul>
-                        {technicalPostsByCategory[categoryKey] ? (
-                          technicalPostsByCategory[categoryKey]
-                            .slice(0, 5)
-                            .map((p) => {
+              <PostsGridContainer>
+                {[
+                  {
+                    keys: techCategoryKeys,
+                    posts: technicalPostsByCategory,
+                    allCategories: technicalCategories,
+                  },
+                  {
+                    keys: generalCategoryKeys,
+                    posts: generalPostsByCategory,
+                    allCategories: generalCategories,
+                  },
+                ].map((postType) =>
+                  postType.keys.map((categoryKey, i) => {
+                    return (
+                      <GridItem key={categoryKey}>
+                        <PostHeading>
+                          <PostTitle>
+                            {postType.allCategories[categoryKey].title}
+                          </PostTitle>
+                          <PostEmoji>
+                            {postType.allCategories[categoryKey].emoji}
+                          </PostEmoji>
+                        </PostHeading>
+                        <PostsList className={i < 2 && "with-border"}>
+                          {postType.posts[categoryKey] ? (
+                            postType.posts[categoryKey].slice(0, 5).map((p) => {
                               return (
-                                <li
-                                  className="post-section-title"
-                                  key={p.node.frontmatter.title}
-                                >
-                                  <Link to={p.node.fields.slug}>
-                                    {p.node.frontmatter.title}
-                                  </Link>
-                                  <span className="postDate">
-                                    ({p.node.frontmatter.date})
-                                  </span>
+                                <li key={p.node.frontmatter.title}>
+                                  {p.node.frontmatter.url ? (
+                                    <>
+                                      <a
+                                        href={p.node.frontmatter.url}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                      >
+                                        {p.node.frontmatter.title}
+                                        <i
+                                          className="fa fa-external-link"
+                                          style={{ paddingLeft: "4px" }}
+                                        ></i>
+                                      </a>
+
+                                      <PublishingPlatform>
+                                        ({p.node.frontmatter.platform})
+                                      </PublishingPlatform>
+                                    </>
+                                  ) : (
+                                    <Link to={p.node.fields.slug}>
+                                      {p.node.frontmatter.title}
+                                    </Link>
+                                  )}
+
+                                  <PostDate>{p.node.frontmatter.date}</PostDate>
                                 </li>
                               );
                             })
-                        ) : (
-                          <p>No posts to display</p>
-                        )}
-                        {}
-                      </ul>
-                    </div>
-                  );
-                })}
-              </div>
-              <div className="grid-container-general">
-                {generalCategoryKeys.map((categoryKey) => {
-                  return (
-                    <div key={categoryKey}>
-                      <h5 className="post-section-heading">
-                        {generalCategories[categoryKey].title}
-                        <span style={{ padding: "0 5px" }}>
-                          {generalCategories[categoryKey].emoji}
-                        </span>
-                      </h5>
-                      <ul>
-                        {generalPostsByCategory[categoryKey] ? (
-                          generalPostsByCategory[categoryKey]
-                            .slice(0, 5)
-                            .map((p) => {
-                              return (
-                                <li
-                                  className="post-section-title"
-                                  key={p.node.frontmatter.title}
-                                >
-                                  <Link to={p.node.fields.slug}>
-                                    {p.node.frontmatter.title}
-                                  </Link>
-                                  <span className="postDate">
-                                    ({p.node.frontmatter.date})
-                                  </span>
-                                </li>
-                              );
-                            })
-                        ) : (
-                          <p>No posts to display</p>
-                        )}
-                        {}
-                      </ul>
-                    </div>
-                  );
-                })}
-              </div>
+                          ) : (
+                            <p>No posts in this category 😢</p>
+                          )}
+                        </PostsList>
+                      </GridItem>
+                    );
+                  })
+                )}
+              </PostsGridContainer>
               (<Link to="/blog">See all</Link>)
             </div>
           </div>
@@ -187,133 +231,6 @@ const IndexPage = ({ data }) => {
                     <p>{t.node.frontmatter.description}</p>
                   </li>
                 ))}
-              </ul>
-            </section>
-
-            <section>
-              <h3>external blogs/publications</h3>
-              <ul id="externalPosts">
-                <li>
-                  <a
-                    href="https://dev.to/harri_etty/the-introduction-to-servers-i-wish-i-d-had-44jl"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    The Introduction to Servers I Wish I&apos;d Had
-                  </a>{" "}
-                  (dev.to)
-                </li>
-                <li>
-                  <a
-                    href="https://dev.to/harri_etty/maybe-i-should-have-just-used-create-react-app-56af"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Maybe I Should Have Just Used create-react-app
-                  </a>{" "}
-                  (dev.to)
-                </li>
-                <li>
-                  <a
-                    href="https://dev.to/harri_etty/from-javascript-to-ruby-a-few-of-my-favourite-features-37mf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    From JavaScript to Ruby: A Few of my Favourite Features
-                  </a>{" "}
-                  (dev.to)
-                </li>
-                <li>
-                  <a
-                    href="https://medium.freecodecamp.org/what-to-expect-in-your-first-week-as-a-software-developer-322572f17063"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    What to expect in your first week as a software developer
-                  </a>{" "}
-                  (FreeCodeCamp Publication, Medium)
-                </li>
-                <li>
-                  <a
-                    href="https://medium.com/@harrietty/zipping-and-unzipping-files-with-nodejs-375d2750c5e4"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Zipping and unzipping files with NodeJS
-                  </a>{" "}
-                  (Medium)
-                </li>
-                <li>
-                  <a
-                    href="https://medium.com/northcoders/make-a-web-scraper-with-aws-lambda-and-the-serverless-framework-807d0f536d5f"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Make a web scraper with AWS Lambda and the Serverless
-                    framework
-                  </a>{" "}
-                  (Northcoders Publication, Medium)
-                </li>
-                <li>
-                  <a
-                    href="https://medium.com/@harrietty/reimplementing-express-part-1-1c82d8fe5e01"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Reimplementing Express (Part 1)
-                  </a>{" "}
-                  (Medium)
-                </li>
-                <li>
-                  <a
-                    href="https://medium.com/@harrietty/reimplementing-express-part-2-be2c00a35b4a"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Reimplementing Express (Part 2)
-                  </a>{" "}
-                  (Medium)
-                </li>
-                <li>
-                  <a
-                    href="https://medium.com/northcoders/understanding-bugs-and-errors-in-javascript-675ebb0a109a"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Understanding bugs and errors in JavaScript
-                  </a>{" "}
-                  (Northcoders Publication, Medium)
-                </li>
-                <li>
-                  <a
-                    href="https://medium.com/northcoders/an-algorithm-for-solving-coding-katas-ab6f2ed6a6b8"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    An Algorithm for Solving Coding Katas
-                  </a>{" "}
-                  (Northcoders Publication, Medium)
-                </li>
-                <li>
-                  <a
-                    href="https://medium.com/northcoders/creating-a-project-generator-with-node-29e13b3cd309"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Creating a Project Generator with NodeJS
-                  </a>{" "}
-                  (Northcoders Publication, Medium)
-                </li>
-                <li>
-                  <a
-                    href="https://medium.com/northcoders/5-great-coding-books-for-beginners-9726e5cc7f4e"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    5 Great Books for Coding Beginners
-                  </a>{" "}
-                  (Northcoders Publication, Medium)
-                </li>
               </ul>
             </section>
 
@@ -512,7 +429,7 @@ IndexPage.propTypes = {
 export const query = graphql`
   query {
     blogposts: allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "/blog/" } }
+      filter: { fileAbsolutePath: { regex: "/blog/|/external-posts/" } }
       sort: { fields: [frontmatter___date], order: DESC }
     ) {
       edges {
@@ -526,6 +443,8 @@ export const query = graphql`
             description
             category
             technical
+            url
+            platform
           }
         }
       }
@@ -544,6 +463,8 @@ export const query = graphql`
             frontimage
             category
             technical
+            platform
+            url
           }
         }
       }

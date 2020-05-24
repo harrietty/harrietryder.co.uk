@@ -1,8 +1,14 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Link, graphql } from "gatsby";
+import styled from "styled-components";
 import Layout from "../components/layout";
+import { PostDate } from "../components/shared/styled";
 
+const Description = styled.p`
+  font-style: italic;
+  font-size: 0.8em;
+`;
 export default function BlogHomepage({ data }) {
   const posts = data.allMarkdownRemark.edges;
   return (
@@ -13,8 +19,8 @@ export default function BlogHomepage({ data }) {
           return (
             <p key={i}>
               <Link to={node.fields.slug}>{node.frontmatter.title}</Link>
-              <span className="postDate">({node.frontmatter.date})</span>
-              <p className="postDescription">{node.frontmatter.description}</p>
+              <PostDate>({node.frontmatter.date})</PostDate>
+              <Description>{node.frontmatter.description}</Description>
             </p>
           );
         })}
@@ -24,7 +30,7 @@ export default function BlogHomepage({ data }) {
 }
 
 BlogHomepage.propTypes = {
-  data: PropTypes.object
+  data: PropTypes.object,
 };
 
 export const query = graphql`

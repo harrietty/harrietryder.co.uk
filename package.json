@@ -37,7 +37,8 @@
     "react-helmet": "^5.2.0",
     "react-spinners": "^0.8.0",
     "react-twitter-embed": "^3.0.3",
-    "s3-deploy": "^1.1.6"
+    "s3-deploy": "^1.1.6",
+    "styled-components": "^5.1.0"
   },
   "devDependencies": {
     "eslint": "^6.8.0",
