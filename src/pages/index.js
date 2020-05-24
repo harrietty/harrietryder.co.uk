@@ -11,8 +11,8 @@ import talk from "../img/talk.jpg";
 import teaching from "../img/codebar.png";
 import nc from "../img/5.jpg";
 import techreturners from "../img/returners.jpeg";
-import { PostDate } from "../components/shared/styled";
 import { generalCategories, technicalCategories } from "../models/categories";
+import PostLink from "../components/PostLink";
 import "milligram";
 import "./index.css";
 
@@ -24,6 +24,19 @@ const PostsGridContainer = styled.div`
   grid-template-rows: 1fr 1fr 1fr;
   grid-row-gap: 0px;
   grid-column-gap: 30px;
+  @media (max-width: 1020px) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  }
+  @media (max-width: 700px) {
+    display: none;
+  }
+`;
+
+const PostsSingleListContainer = styled.div`
+  @media (min-width: 701px) {
+    display: none;
+  }
 `;
 
 const PostsList = styled.ul`
@@ -38,23 +51,26 @@ const PostsList = styled.ul`
   li {
     margin-bottom: 30px;
   }
-`;
-
-const PublishingPlatform = styled.span`
-  color: #adadad;
-  padding-left: 5px;
-  font-size: 12px;
+  @media (max-width: 1020px) {
+    padding: 25px;
+  }
 `;
 
 const PostEmoji = styled.span`
   padding: 0 10px;
   text-decoration: none;
   font-size: 26px;
+  @media (max-width: 1155px) {
+    font-size: 16px;
+  }
 `;
 
 const PostHeading = styled.h5`
   font-size: 20px;
   margin-left: 20px;
+  @media (max-width: 1155px) {
+    font-size: 16px;
+  }
 `;
 
 const PostTitle = styled.span`
@@ -94,7 +110,6 @@ const IndexPage = ({ data }) => {
     }
   });
 
-  console.log(technicalPostsByCategory);
   return (
     <Layout>
       <div className="container">
@@ -170,33 +185,10 @@ const IndexPage = ({ data }) => {
                           {postType.posts[categoryKey] ? (
                             postType.posts[categoryKey].slice(0, 5).map((p) => {
                               return (
-                                <li key={p.node.frontmatter.title}>
-                                  {p.node.frontmatter.url ? (
-                                    <>
-                                      <a
-                                        href={p.node.frontmatter.url}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                      >
-                                        {p.node.frontmatter.title}
-                                        <i
-                                          className="fa fa-external-link"
-                                          style={{ paddingLeft: "4px" }}
-                                        ></i>
-                                      </a>
-
-                                      <PublishingPlatform>
-                                        ({p.node.frontmatter.platform})
-                                      </PublishingPlatform>
-                                    </>
-                                  ) : (
-                                    <Link to={p.node.fields.slug}>
-                                      {p.node.frontmatter.title}
-                                    </Link>
-                                  )}
-
-                                  <PostDate>{p.node.frontmatter.date}</PostDate>
-                                </li>
+                                <PostLink
+                                  post={p}
+                                  key={p.node.frontmatter.title}
+                                />
                               );
                             })
                           ) : (
@@ -208,6 +200,11 @@ const IndexPage = ({ data }) => {
                   })
                 )}
               </PostsGridContainer>
+              <PostsSingleListContainer>
+                {data.blogposts.edges.slice(0, 10).map((p) => {
+                  return <PostLink post={p} key={p.node.frontmatter.title} />;
+                })}
+              </PostsSingleListContainer>
               (<Link to="/blog">See all</Link>)
             </div>
           </div>

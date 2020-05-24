@@ -148,11 +148,15 @@ section {
   list-style-type: none;
   display: flex;
   justify-content: space-between;
-  width: 160px;
-  padding: 10px 31px 10px 10px;
+  width: 100px;
+  padding: 10px 11px 10px 10px;
 }
 
-@media only screen and (max-width: 1050px) {
+#mediaIcons li {
+  font-size: 11px;
+}
+
+@media only screen and (max-width: 1285px) {
   #socialBanner {
     position: initial;
     width: 100%;
