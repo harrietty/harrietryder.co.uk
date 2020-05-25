@@ -6,7 +6,7 @@ export const generalCategories = {
   learning: { title: "#LearnToCode", emoji: <span>💻</span> },
   life: { title: "Life", emoji: <span>⛰</span> },
   career: { title: "Career", emoji: <span>🧗‍♀️</span> },
-  travel: { title: "Travel", emoji: <span>👣</span> },
+  // travel: { title: "Travel", emoji: <span>👣</span> },
 };
 
 export const technicalCategories = {

@@ -3,7 +3,7 @@ title: Walking the Camino de Santiago
 date: 2018-09-30
 tags: [holidays, travel, health, fitness]
 description: In which Mauro and I walk a million kilometers, experience a range of leg-related injuries and see a large amount of Spanish countryside.
-category: travel
+category: life
 technical: false
 ---
 
