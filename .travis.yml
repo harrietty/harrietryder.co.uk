@@ -9,6 +9,7 @@ before_install:
   - pip install awscli
   - export PATH=$PATH:$HOME/.local/bin
   - sudo apt-get install nodejs npm
+  - node -v
 install:
   - npm install
 script:
