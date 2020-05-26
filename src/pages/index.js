@@ -126,7 +126,7 @@ const IndexPage = ({ data }) => {
             </div>
           </div>
           <div className="row">
-            <div className="column column 95" style={{ margin: "auto" }}>
+            <div className="column column-95" style={{ margin: "auto" }}>
               <PostsGridContainer>
                 {[
                   {

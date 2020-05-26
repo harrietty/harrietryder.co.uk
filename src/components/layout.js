@@ -1,20 +1,43 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Link, graphql, StaticQuery } from "gatsby";
+import { graphql, StaticQuery } from "gatsby";
 import Helmet from "react-helmet";
+import styled from "styled-components";
 
 import favicon from "./images/favicon.ico";
+import Header from "../components/Header";
 import "./layout.css";
 
-const Header = ({ title }) => (
-  <header>
-    <div className="container">
-      <Link to="/" className="headerLink">
-        <h1>{title}</h1>
-      </Link>
-    </div>
-  </header>
-);
+const BannerContainer = styled.div`
+  position: fixed;
+  top: 0;
+  right: 0;
+  ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+    padding: 10px 11px 10px 10px;
+    li {
+      font-size: 11px;
+    }
+  }
+
+  @media only screen and (max-width: 1270px) {
+    position: initial;
+    width: 100%;
+    ul {
+      margin: 0 auto;
+      width: 250px;
+    }
+
+    &.lightBg {
+      background-color: rgba(255, 255, 255, 0.9);
+      position: fixed;
+      z-index: 100;
+    }
+  }
+`;
 
 class SocialBanner extends React.Component {
   state = {
@@ -31,9 +54,9 @@ class SocialBanner extends React.Component {
 
   render() {
     return (
-      <div id="socialBanner" className={this.state.bannerColor}>
-        <ul id="mediaIcons">
-          <li className="mediaIcon">
+      <BannerContainer className={this.state.bannerColor}>
+        <ul>
+          <li>
             <a
               href="https://twitter.com/harri_etty"
               target="_blank"
@@ -42,7 +65,7 @@ class SocialBanner extends React.Component {
               <i className="fa fa-2x fa-twitter" aria-hidden="true" />
             </a>
           </li>
-          <li className="mediaIcon">
+          <li>
             <a
               href="https://github.com/harrietty"
               target="_blank"
@@ -51,7 +74,7 @@ class SocialBanner extends React.Component {
               <i className="fa fa-2x fa-github" aria-hidden="true" />
             </a>
           </li>
-          <li className="mediaIcon">
+          <li>
             <a
               href="https://www.linkedin.com/in/harriet-ryder-027516127/"
               target="_blank"
@@ -61,7 +84,7 @@ class SocialBanner extends React.Component {
             </a>
           </li>
         </ul>
-      </div>
+      </BannerContainer>
     );
   }
 }
