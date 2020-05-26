@@ -1,15 +1,16 @@
 module.exports = {
   siteMetadata: {
-    title: "harriet ryder"
+    title: "harriet ryder",
   },
   plugins: [
     "gatsby-plugin-react-helmet",
+    "gatsby-plugin-styled-components",
     {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "src",
-        path: `${__dirname}/src/`
-      }
+        path: `${__dirname}/src/`,
+      },
     },
     {
       resolve: "gatsby-transformer-remark",
@@ -17,7 +18,7 @@ module.exports = {
         plugins: [
           {
             resolve: "gatsby-remark-figure-caption",
-            options: { figureClassName: "md-figure" }
+            options: { figureClassName: "md-figure" },
           },
           {
             resolve: "gatsby-remark-images",
@@ -27,25 +28,25 @@ module.exports = {
               // base for generating different widths of each image.
               maxWidth: 650,
               quality: 100,
-              linkImagesToOriginal: false
-            }
+              linkImagesToOriginal: false,
+            },
           },
           {
             resolve: "gatsby-remark-prismjs",
             options: {
-              noInlineHighlight: true
-            }
+              noInlineHighlight: true,
+            },
           },
           {
             resolve: "gatsby-remark-copy-linked-files",
             options: {
-              ignoreFileExtensions: ["png", "jpg", "jpeg", "bmp", "tiff"]
-            }
-          }
-        ]
-      }
+              ignoreFileExtensions: ["png", "jpg", "jpeg", "bmp", "tiff"],
+            },
+          },
+        ],
+      },
     },
     "gatsby-transformer-sharp",
-    "gatsby-plugin-sharp"
-  ]
+    "gatsby-plugin-sharp",
+  ],
 };

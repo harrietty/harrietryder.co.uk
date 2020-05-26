@@ -10,7 +10,7 @@ const Container = styled.div`
   p {
     padding: 0px 20px;
   }
-  @media (max-width: 750px) {
+  @media screen and (max-width: 750px) {
     display: block;
     text-align: center;
     img {

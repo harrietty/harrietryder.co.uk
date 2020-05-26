@@ -24,11 +24,11 @@ const PostsGridContainer = styled.div`
   grid-template-rows: 1fr 1fr 1fr;
   grid-row-gap: 0px;
   grid-column-gap: 30px;
-  @media (max-width: 1020px) {
+  @media screen and (max-width: 1020px) {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   }
-  @media (max-width: 700px) {
+  @media screen and (max-width: 700px) {
     display: none;
   }
 `;
@@ -51,7 +51,7 @@ const PostsList = styled.ul`
   li {
     margin-bottom: 30px;
   }
-  @media (max-width: 1020px) {
+  @media screen and (max-width: 1020px) {
     padding: 25px;
   }
 `;
@@ -60,7 +60,7 @@ const PostEmoji = styled.span`
   padding: 0 10px;
   text-decoration: none;
   font-size: 26px;
-  @media (max-width: 1155px) {
+  @media screen and (max-width: 1155px) {
     font-size: 16px;
   }
 `;
@@ -68,7 +68,7 @@ const PostEmoji = styled.span`
 const PostHeading = styled.h5`
   font-size: 20px;
   margin-left: 20px;
-  @media (max-width: 1155px) {
+  @media screen and (max-width: 1155px) {
     font-size: 16px;
   }
 `;
@@ -85,6 +85,7 @@ const GridItem = styled.div`
   display: flex;
   flex-direction: column;
 `;
+
 const IndexPage = ({ data }) => {
   const generalCategoryKeys = Object.keys(generalCategories);
   const techCategoryKeys = Object.keys(technicalCategories);
@@ -170,9 +171,11 @@ const IndexPage = ({ data }) => {
                 )}
               </PostsGridContainer>
               <PostsSingleListContainer>
-                {data.blogposts.edges.slice(0, 10).map((p) => {
-                  return <PostLink post={p} key={p.node.frontmatter.title} />;
-                })}
+                <ul>
+                  {data.blogposts.edges.slice(0, 10).map((p) => {
+                    return <PostLink post={p} key={p.node.frontmatter.title} />;
+                  })}
+                </ul>
               </PostsSingleListContainer>
               (<Link to="/blog">See all</Link>)
             </div>
