@@ -7,7 +7,7 @@ category: WILTW
 technical: false
 ---
 
-### What is Optimistic Concurrency? First, a secnario...
+### What is Optimistic Concurrency? First, a scenario...
 
 Imagine you are a humble bookseller and you have signed into your shop's stock management system. A customer has just called you to tell you they want to add 2 more copies of _Normal People_ to their order. You have their customer record open and you can see their order. They've already got a copy on order, but they've decided to give copies to their mother-in-law and their brother, too. It's just such a good book. While they're on the phone with you, they ask you to change the delivery address to their office, which you do, as well.
 
@@ -29,7 +29,7 @@ Concurrency is the idea that two processes (in this case, updates) might be goin
 
 Both Optimistic and Pessimistic Concurrency offer solutions to deal with the conflicts that this concurrency might cause. They are both _concepts_ and don't prescribe specific technical implementations.
 
-**Optimistic concurrency** is the idea that these kinds of conflicts won't happen very often (hence it's "optimistic"), but when they do happen, the humans involved should be given the opportunity to react and decide what to do. In the above example, that means that if your colleage saved the record first, then when _you_ attempted to save the record afterwards you would be warned somehow, and would have to decide whether to overwrite the other changes or not.
+**Optimistic concurrency** is the idea that these kinds of conflicts won't happen very often (hence it's "optimistic"), but when they do happen, the humans involved should be given the opportunity to react and decide what to do. In the above example, that means that if your colleague saved the record first, then when _you_ attempted to save the record afterwards you would be warned somehow, and would have to decide whether to overwrite the other changes or not.
 
 **Pessimistic Concurrency** assumes that these kinds of conflicts might occur regularly, and that it would be a pain to have to keep asking a human what to do, or perhaps not even feasible. A solution that employed pessimistic concurrency would need to ensure the system was protected from these kinds of conflicts ever happening. That generally means applying a "lock" to a record, so that if someone else is in the process of updating it, another person or system wouldn't be able to. In the above example, that means that your colleague wouldn't have been able to open the record while you were busy with it, thus preventing any possible conflicts.
 
@@ -74,7 +74,7 @@ Here are a few examples of how various frameworks/technologies implement Optimis
 
 - **DynamoDB** uses the mechanism of <a href="https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/WorkingWithItems.html#WorkingWithItems.ConditionalUpdate" target="_blank" rel="noopener noreferrer">Conditional Updating</a>, where you can declare that the item should only be updated if certain values match what you expect. You could check a version number, or you could check that a property hasn't been changed by someone else.
 
-- Rails uses version numbers, which is calls <a href="https://blog.kiprosh.com/implement-optimistic-locking-in-rails/" target="_blank" rel="noopener noreferrer">Optimistic Locking</a>.
+- Rails uses version numbers, which it calls <a href="https://blog.kiprosh.com/implement-optimistic-locking-in-rails/" target="_blank" rel="noopener noreferrer">Optimistic Locking</a>.
 
 - Azure's CosmosDB gives every document an <a href="https://docs.microsoft.com/en-us/azure/cosmos-db/database-transactions-optimistic-concurrency?irgwc=1&OCID=AID2000142_aff_7593_1243925&tduid=%28ir__spfhq39rt9kftkabkk0sohz3x22xni99q9xxsasq00%29%287593%29%281243925%29%28je6NUbpObpQ-eQuFHzSCimUVNDuxI6.GGA%29%28%29&irclickid=_spfhq39rt9kftkabkk0sohz3x22xni99q9xxsasq00#optimistic-concurrency-control" target="_blank" rel="noopener noreferrer">\_etag</a> property, which it updates automatically when the item is saved.
 
@@ -86,7 +86,7 @@ On the frontend it's really up to you how you handle optimistic concurrency!
 
 Assuming you receive a server error that you can identify as a concurrency error when trying to update an outdated record, it's up to you what you want to do.
 
-You might decide to tell the user that the record they're trying to update has been mofified my someone else, and ask them to reload the page.
+You might decide to tell the user that the record they're trying to update has been modified by someone else, and ask them to reload the page.
 
 Or you might provide a more interactive way for them to resolve the conflict, like some live document editing apps do - or think how Github allows you to resolve merge conflicts.
 
@@ -102,4 +102,4 @@ In our humble bookseller example it would mean that after pressing "Save", the r
 
 Optimistic updating allows for a more fluid user experience. A great example is when making quick inline edits to a record, like editing a comment or upvoting an article. The edit/action results in a request to update the database record... but if you had to wait for confirmation before you saw your little "thumbs up" appear, the experience would feel very laggy.
 
-I hope this has been helpful, <a href="https://twitter.com/harri_etty" target="_blank" rel="noopener noreferrer">follow me on Twitter</a> and let me know if you have an comments 🤗
+I hope this has been helpful, <a href="https://twitter.com/harri_etty" target="_blank" rel="noopener noreferrer">follow me on Twitter</a> and let me know if you have any comments 🤗
