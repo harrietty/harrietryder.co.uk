@@ -14,9 +14,11 @@ const HeaderContainer = styled.header`
     text-decoration-color: lightseagreen;
     text-align: center;
     font-family: Courier New, Courier, monospace;
-    padding-bottom: 17px;
   }
-  @media only screen and (max-width: 1285px) {
+  @media (max-width: 1270px) {
+    margin-top: 60px;
+  }
+  @media (max-width: 1285px) {
     header {
       margin-top: 65px;
       a:hover {

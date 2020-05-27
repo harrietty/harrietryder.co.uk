@@ -9,6 +9,7 @@ const Description = styled.p`
   font-style: italic;
   font-size: 0.8em;
 `;
+
 export default function BlogHomepage({ data }) {
   const posts = data.allMarkdownRemark.edges;
   return (

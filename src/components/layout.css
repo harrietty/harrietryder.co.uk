@@ -40,56 +40,12 @@ h1 {
   font-size: 4rem;
 }
 
-#blogArea {
-  line-height: 30px;
-  width: 80%;
-  margin: auto;
-}
-
-.blogHeader {
-  margin-bottom: 22px;
-}
-
-.blogDate {
-  background-color: lemonchiffon;
-}
-
-p,
-#blogArea ul,
-#blogArea li {
+p {
   font-family: Georgia, "Times New Roman", Times, serif;
-}
-
-/* #blogArea ul, #blogArea li {
-  font-size: 1em;
-} */
-
-#blogTags {
-  display: flex;
-  list-style-type: none;
-  justify-content: space-between;
-}
-
-#blogTags .blogTagItem {
-  padding-left: 0;
-  margin-left: 0;
-  background-color: lightcoral;
-  border-radius: 11px;
-  padding: 0px 9px;
-  font-family: "Cutive Mono";
-}
-
-.taggedAs {
-  margin: 29px 0px;
 }
 
 section h3 {
   border-bottom: 7px double lightcoral;
-}
-
-#blogArea h3,
-#blogArea .h3 {
-  margin: 2.3rem 0;
 }
 
 a,

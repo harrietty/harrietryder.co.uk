@@ -24,11 +24,11 @@ const PostsGridContainer = styled.div`
   grid-template-rows: 1fr 1fr 1fr;
   grid-row-gap: 0px;
   grid-column-gap: 30px;
-  @media screen and (max-width: 1020px) {
+  @media (max-width: 1020px) {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   }
-  @media screen and (max-width: 700px) {
+  @media (max-width: 700px) {
     display: none;
   }
 `;
@@ -51,7 +51,7 @@ const PostsList = styled.ul`
   li {
     margin-bottom: 30px;
   }
-  @media screen and (max-width: 1020px) {
+  @media (max-width: 1020px) {
     padding: 25px;
   }
 `;
@@ -60,7 +60,7 @@ const PostEmoji = styled.span`
   padding: 0 10px;
   text-decoration: none;
   font-size: 26px;
-  @media screen and (max-width: 1155px) {
+  @media (max-width: 1155px) {
     font-size: 16px;
   }
 `;
@@ -68,7 +68,7 @@ const PostEmoji = styled.span`
 const PostHeading = styled.h5`
   font-size: 20px;
   margin-left: 20px;
-  @media screen and (max-width: 1155px) {
+  @media (max-width: 1155px) {
     font-size: 16px;
   }
 `;
@@ -84,6 +84,13 @@ const PostTitle = styled.span`
 const GridItem = styled.div`
   display: flex;
   flex-direction: column;
+`;
+
+const WiderOnMobile = styled.div`
+  @media (max-width: 750px) {
+    flex: 0 0 90%;
+    max-width: 90%;
+  }
 `;
 
 const IndexPage = ({ data }) => {
@@ -115,9 +122,9 @@ const IndexPage = ({ data }) => {
     <Layout>
       <div className="container">
         <div className="row">
-          <div className="column column-80" style={{ margin: "auto" }}>
+          <WiderOnMobile className="column column-80" style={{ margin: "auto" }}>
             <WelcomeSection />
-          </div>
+          </WiderOnMobile>
         </div>
         <section id="blog">
           <div className="row">
@@ -204,7 +211,7 @@ const IndexPage = ({ data }) => {
             </section>
 
             <section id="education">
-              <h3>teaching/mentoring/speaking</h3>
+              <h3>community</h3>
               <p>
                 I have always been passionate about education - before tech I
                 worked in school/college libraries, and taught English. Now I

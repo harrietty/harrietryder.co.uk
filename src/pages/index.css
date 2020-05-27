@@ -1,8 +1,3 @@
-.myFace {
-  width: 200px;
-  border-radius: 50%;
-}
-
 .speakingSection {
   display: flex;
   justify-content: space-around;
@@ -51,7 +46,7 @@ span.stronger {
   text-align: center;
 }
 
-@media only screen and (max-width: 750px) {
+@media (max-width: 750px) {
   .speakingSection {
     display: flex;
     flex-direction: column;

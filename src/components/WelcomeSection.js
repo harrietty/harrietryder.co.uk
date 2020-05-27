@@ -7,25 +7,42 @@ const Container = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  p {
-    padding: 0px 20px;
-  }
-  @media screen and (max-width: 750px) {
+  @media (max-width: 750px) {
     display: block;
     text-align: center;
     img {
       display: block;
       margin: auto;
     }
+    p {
+      padding: 0;
+    }
   }
+`;
+
+const Text = styled.div`
+  p {
+    padding: 0px 20px;
+  }
+  @media (max-width: 750px) {
+    margin-top: 20px;
+    p {
+      padding: 0;
+    }
+  }
+`;
+
+const MyFace = styled.img`
+  width: 200px;
+  border-radius: 50%;
 `;
 
 const WelcomeSection = () => (
   <section>
     <h3>hello</h3>
     <Container>
-      <img src={myFace} className="myFace" alt="My Face" />
-      <div className="intro">
+      <MyFace src={myFace} alt="My Face" />
+      <Text>
         <p>
           Hi! I&apos;m a software engineer with a passion for natural languages
           and education. Currently working as a front-end developer in a
@@ -48,7 +65,7 @@ const WelcomeSection = () => (
           Follow my <Link to="/100daysofcode">#100DaysOfCode progress</Link>{" "}
           (and yours, too!)
         </p>
-      </div>
+      </Text>
     </Container>
   </section>
 );

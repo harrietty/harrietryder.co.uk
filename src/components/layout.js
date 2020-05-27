@@ -23,7 +23,7 @@ const BannerContainer = styled.div`
     }
   }
 
-  @media only screen and (max-width: 1270px) {
+  @media (max-width: 1270px) {
     position: initial;
     width: 100%;
     ul {
