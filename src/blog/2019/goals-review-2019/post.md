@@ -5,6 +5,7 @@ tags: [goals, personal, new-year]
 description: In which I berate myself for not running 2 marathons, in fact not even running 1 marathon.
 category: life
 technical: false
+language: EN
 ---
 
 ![Giving my biggest conference talk to date. Not a goal I'd set but an achievement nonetheless!](./img/talk.jpg)

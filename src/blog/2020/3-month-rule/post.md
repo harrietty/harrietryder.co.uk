@@ -5,6 +5,7 @@ tags: [career, life, personal, learning, reflection]
 description: Why I always tell people to expect to feel a bit useless for the first 3 months in a new job, and how to feel better about it.
 category: career
 technical: false
+language: EN
 ---
 
 I've always maintained that it takes around 3 months, minimum, to begin to feel like you're really acing it in a new job. I'm speaking from the point of view of a software engineer, but perhaps it also holds true for any kind of more complex knowledge work, especially work that requires acquiring domain knowledge and close collaborative teamwork to do well.

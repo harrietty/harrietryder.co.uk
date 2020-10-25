@@ -5,6 +5,7 @@ tags: [review, personal, life]
 description: Mostly being ill, also some book-related fun!
 category: life
 technical: false
+language: EN
 ---
 
 This post's going to be a short one, mostly by virtue of having done very little of interest during April.

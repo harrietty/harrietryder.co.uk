@@ -5,6 +5,7 @@ tags: [review, personal, life]
 description: I've been quiet...
 category: life
 technical: false
+language: EN
 ---
 
 This is a quick post just to say I'm still alive.

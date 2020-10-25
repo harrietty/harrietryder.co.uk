@@ -5,6 +5,7 @@ tags: [review, personal, life]
 description: My regular monthly round-up, this month including snow, mentoring, a trip to london and AWS training.
 category: life
 technical: false
+language: EN
 ---
 
 ![We had snow!](./img/snow.png)

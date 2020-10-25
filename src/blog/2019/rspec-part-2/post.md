@@ -5,6 +5,7 @@ tags: [code, howto, technical, tutorial, ruby, rspec]
 description: In my quest to understand the mysterious workings of RSpec, I begin reimplementing it from scratch, documenting my learnings along the way. Join me in part 2 for more magic!
 category: fundamentals
 technical: true
+language: EN
 ---
 
 ![](./img/rubies2.jpg)

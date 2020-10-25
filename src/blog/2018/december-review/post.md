@@ -5,6 +5,7 @@ tags: [review, personal, life]
 description: My regular recap of the past month, this time including marathon running, tech ladies, engagement parties and a deceased dog :(
 category: life
 technical: false
+language: EN
 ---
 
 You might not be aware of this, but a little while ago it was December 2018. Getting all caught up in the end-of-year reflections and resolutions for personal transformation, this fact almost completely passed me by. Now it's well into January, but so that poor December doesn't get left out (and my blog posts are all uniform) I'm finally sitting down to post a review of The Forgotten Month.

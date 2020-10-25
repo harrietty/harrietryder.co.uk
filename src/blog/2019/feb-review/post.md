@@ -5,6 +5,7 @@ tags: [review, personal, life]
 description: My regular end-of-month blog post, this time featuring CodeFirst:Girls, a new side project, and lots of good books
 category: life
 technical: false
+language: EN
 ---
 
 ![Morning light in the living room](./img/light.png)

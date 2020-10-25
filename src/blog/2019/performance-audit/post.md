@@ -5,6 +5,7 @@ tags: [performance, audit, lighthouse, frontend]
 description: "Spoiler: I actually only reached 98% and that's okay with me"
 category: frontend
 technical: false
+language: EN
 ---
 
 ![Google Chrome's Lighthouse Audit Tool](./img/lighthouse.png)

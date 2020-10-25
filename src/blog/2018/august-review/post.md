@@ -6,6 +6,7 @@ frontimage: myface.jpg
 description: My regular monthly blogpost, including a new house, lots of paint, visitors, running, and a get-together with other women in tech
 category: life
 technical: false
+language: EN
 ---
 
 August has been a top month. One of the best months ever, probably!

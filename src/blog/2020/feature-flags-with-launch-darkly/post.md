@@ -5,6 +5,7 @@ tags: [learning, feature-flags, launch-darkly, frontend, WILTW]
 description: How to toggle functionality on/off for all users, or specific users, using Launch Darkly
 category: WILTW
 technical: false
+language: EN
 ---
 
 ### What are feature flags?

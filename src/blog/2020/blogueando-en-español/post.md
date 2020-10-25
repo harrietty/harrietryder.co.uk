@@ -5,6 +5,7 @@ tags: [español, personal]
 description: ¡Hola! Ahora que vivo en España, voy a comenzar a bloguear en castellano también. Esto es mi primer blog, espero que os guste (¡y que entendéis mi español malo!)
 category: life
 technical: false
+language: ES
 ---
 
 ¡Hola! Ahora que vivo en España, voy a comenzar a bloguear en castellano también para practicar, y tal vez alcance una audiencia más amplia. Así que aquí lo tienes, mi primer blog en español.

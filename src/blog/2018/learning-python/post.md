@@ -5,6 +5,7 @@ tags: [learn-to-code, programming, python, javascript, learning]
 description: In which I sort-of try learning my second programming language and relearn the joy of being a beginner at something again
 category: learning
 technical: false
+language: EN
 ---
 
 ### Beginning with JavaScript

@@ -6,6 +6,7 @@ frontimage: myface.jpg
 description: In which I attempt to gain a place on a coding bootcamp, succeed, and write about the process
 category: career
 technical: false
+language: EN
 ---
 
 The whole process of joining Northcoders happened in a bit of a flurry in mid-February. I had been scouting out bootcamps for a little while and had my eye on perhaps joining a remote coding bootcamp, which was about all I could afford at that time. Then I came across <a href="https://northcoders.com/" target="_blank" rel="noopener noreferrer">Northcoders</a>, which looked quite new, and because I couldn't see their fees on their website, sent them a tweet.

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 import { Link, graphql } from "gatsby";
@@ -28,8 +28,13 @@ const WiderOnMobile = styled.div`
   }
 `;
 
+const MAX_POSTS = 8;
+
 const IndexPage = ({ data }) => {
-  const posts = data.blogposts.edges;
+  const [languages, setLanguages] = useState(["ES", "EN"]);
+  const posts = data.blogposts.edges
+    .filter(({ node }) => languages.includes(node.frontmatter.language))
+    .slice(0, MAX_POSTS);
 
   return (
     <Layout>
@@ -45,7 +50,47 @@ const IndexPage = ({ data }) => {
         <section id="blog">
           <div className="row">
             <div className="column column-80" style={{ margin: "auto" }}>
-              <h3>writing</h3>
+              <h3
+                style={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "center",
+                }}
+              >
+                <div>writing</div>
+                <div style={{ display: "flex" }}>
+                  <div style={{ marginRight: 10 }}>
+                    <input
+                      type="checkbox"
+                      value="ES"
+                      checked={languages.includes("ES")}
+                      onChange={(e) => {
+                        if (e.target.checked) {
+                          setLanguages([...languages, "ES"]);
+                        } else {
+                          setLanguages(languages.filter((l) => l !== "ES"));
+                        }
+                      }}
+                    />
+                    🇪🇸
+                  </div>
+                  <div>
+                    <input
+                      type="checkbox"
+                      value="EN"
+                      checked={languages.includes("EN")}
+                      onChange={(e) => {
+                        if (e.target.checked) {
+                          setLanguages([...languages, "EN"]);
+                        } else {
+                          setLanguages(languages.filter((l) => l !== "EN"));
+                        }
+                      }}
+                    />
+                    🇬🇧
+                  </div>
+                </div>
+              </h3>
               {posts.map(({ node }, i) => {
                 return (
                   <p key={i}>
@@ -273,7 +318,6 @@ export const query = graphql`
     blogposts: allMarkdownRemark(
       filter: { fileAbsolutePath: { regex: "/blog/" } }
       sort: { fields: [frontmatter___date], order: DESC }
-      limit: 8
     ) {
       edges {
         node {
@@ -284,6 +328,7 @@ export const query = graphql`
             title
             date(formatString: "Do MMM, YYYY")
             description
+            language
           }
         }
       }

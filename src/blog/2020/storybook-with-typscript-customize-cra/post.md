@@ -5,6 +5,7 @@ tags: [react, typescript, storybook, learning, frontend]
 description: Installing Storybook is a breeze, they said
 category: WILTW
 technical: false
+language: EN
 ---
 
 ### What is Storybook?

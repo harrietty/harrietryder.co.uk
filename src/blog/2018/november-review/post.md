@@ -5,6 +5,7 @@ tags: [review, personal, life]
 description: My monthly end-of-month round-up, this time featuring lots of running, a night at the ballet, bash shell scripting and an engagement (mine!!)
 category: life
 technical: false
+language: EN
 ---
 
 ![Autumn Colours on the Trans Pennine Trail](./img/trail.png)

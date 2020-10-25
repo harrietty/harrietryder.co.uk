@@ -5,6 +5,7 @@ tags: [frontend, javascript, React]
 description: My thoughts on diving deep into Ant Design over the past few months
 category: react
 technical: true
+language: EN
 ---
 
 ![Ant Design Components](./img/antd.png)

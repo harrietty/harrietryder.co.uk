@@ -5,6 +5,7 @@ tags: [code, howto, technical, tutorial]
 description: In which I explore how sites like CodeWars might work under the hood to execute a user's code remotely, and try pulling together the basics of running user code on a Docker container
 category: devops
 technical: true
+language: EN
 ---
 
 Before reading this, it would help if you knew the very basics of Docker:

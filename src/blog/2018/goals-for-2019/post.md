@@ -5,6 +5,7 @@ tags: [goals, personal, new-year]
 description: In which I create yet another list, because my end-of-year list-heavy blog post didn't contain quite enough lists
 category: life
 technical: false
+language: EN
 ---
 
 Here are a few things, in no particular order, that I want to achieve next year.

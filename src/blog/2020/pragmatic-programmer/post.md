@@ -5,6 +5,7 @@ tags: [books, learning, reading]
 description: A collection of notes and thoughts about the classic programming book
 category: books
 technical: false
+language: EN
 ---
 
 ![The Pragmatic Programmer, 1999](./img/prag.png)

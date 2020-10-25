@@ -5,6 +5,7 @@ tags: [learning, frontend, javascript, WILTW]
 description: What is optimistic concurrency, how can it be implemented, and what does it mean for the frontend?
 category: WILTW
 technical: false
+language: EN
 ---
 
 ### What is Optimistic Concurrency? First, a scenario...

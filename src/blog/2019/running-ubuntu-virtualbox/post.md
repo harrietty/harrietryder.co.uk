@@ -5,6 +5,7 @@ tags: [code, howto, technical, tutorial]
 description: In which I decide to take a screeshot of the Ubuntu terminal application, which involves getting to grips with VirtualBox and running Ubuntu as a guest operating system on my Mac
 category: devops
 technical: true
+language: EN
 ---
 
 The other day, I decided I wanted to take a screenshot of the terminal application on Ubuntu to include in an instruction leaflet for new starters on a software development course.

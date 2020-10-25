@@ -5,6 +5,7 @@ tags: [books, reading]
 description: 6 Books I really enjoyed in 2019
 category: books
 technical: false
+language: EN
 ---
 
 I read/listend to a grand total of <a href="https://www.goodreads.com/review/list/14052431-harriet?shelf=2019" target="_blank">**76** books in 2019</a>, up from 50 in 2018. A lot of them focussed on farming, agriculture and climate change, as I become pretty obesssed with these themes for about 6 months and read voraciously on the subject. Perhaps in another blog post I'll share some of my favourite reads around those issues in particular.

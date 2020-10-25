@@ -5,6 +5,7 @@ tags: [review, books, reading, inspiration, values]
 description: I read an interesting book and want to talk about it
 category: books
 technical: false
+language: EN
 ---
 
 ![The Power of Full Engagement](./img/engagement.png)

@@ -5,6 +5,7 @@ tags: [reflection, annual-review, personal, new-year]
 description: In which I reflect on the year of 2018 with a series of lists, because the end of the year is the number 1 season for list making and I got thoroughly caught up in the frenzy.
 category: life
 technical: false
+language: EN
 ---
 
 ![New years eve fun](./img/nye.jpg)
