@@ -245,10 +245,9 @@ const IndexPage = ({ data }) => {
                 imgDesc="Giving an Intro to JavaScript workshop"
               >
                 <p>
-                  I am always interested in opportunities to give short talks or
-                  presentations, especially regarding my journey into tech,
-                  learning/training options and opportunities, and/or technical
-                  workshops (HTML, CSS, JavaScript, Ruby, Git etc).{" "}
+                  I am always interested to hear about opportunities to give
+                  short talks, presentations or workshops, especially for
+                  underrepresented groups in tech.{" "}
                   <a href="mailto:harriethryder@gmail.com">
                     Drop me an email{" "}
                     <span role="img" aria-label="mail">

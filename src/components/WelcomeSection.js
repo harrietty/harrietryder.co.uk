@@ -46,20 +46,12 @@ const WelcomeSection = () => (
         <p>
           Hi! I&apos;m a software engineer with a passion for natural languages
           and education. Currently working as a front-end developer in a
-          React/Redux/Typescript stack, <a href="#education">teaching</a>{" "}
-          software development in the evenings and working on too many
-          sideprojects, most recently:{" "}
-          <a
-            href="https://conju-gator.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            conju-gator.com
-          </a>
+          React/Redux/Typescript stack, building software for charities.
         </p>
         <p>
-          I <a href="#blog">blog</a> and speak about tech, my journey into it,
-          and tech education.
+          I speak Spanish & French, currently live in Valencia 🇪🇸 and am
+          starting to learn Arabic & Catalan. I 💚 yoga, running, growing my own
+          food & striving towards simple living.
         </p>
         <p>
           Follow my <Link to="/100daysofcode">#100DaysOfCode progress</Link>{" "}

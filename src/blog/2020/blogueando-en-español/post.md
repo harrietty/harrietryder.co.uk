@@ -15,7 +15,7 @@ Y bueno, esta es mi primera noticia. Vivimos ahora en España, en Valencia concr
 
 No, es broma, obviamente comparto las partes buenas en las redes, también hemos pasado unos meses con bastante estrés, que todavía trabajamos de las 9 a las 5 y pasamos la mayoría del tiempo enfrente de la pantalla, que el tema de la documentación es bastante agotador, que ahora somos muy pobres porque mudarse al otro lado del continente resulta muy caro (¿quién sabía?), y obviamente extrañamos mucho mucho a nuestra familia en Inglaterra, a nuestro perro que teníamos que dejar con mi madre por el momento, y a nuestros amigos.
 
-![El Parque Turia, un parque grande en el centro de la ciudad](./img/parque_turia.png)
+![El Parque Turia, un gran parque en el centro de la ciudad](./img/parque_turia.png)
 
 Pero total, somos felices aquí. ¿Por qué nos mudamos? Pues, después de pasar 8 años afuera, a Mauro le apetecía volver a estar más cerca a su familia en Valencia. Yo siempre había querido tener la experiencia de vivir en otro país, nunca lo había hecho, y poder mover con mi pareja, a un lugar donde ya conocíamos gente, donde teníamos familia y a una ciudad que me encanta tanto me parecía una maravilla. Hacía mucho tiempo que teníamos la idea de escapar de Mánchester, pero no sabíamos exactamente adonde ir. La verdad es que la pandemia por todas sus partes malas adelantó la situación, dio a Mauro la oportunidad de trabajar de forma remota (yo ya lo hacía), y de repente tuvimos la opción de trabajar de dónde quisiéramos. Así que nos pusimos en marcha y en tan pronto como pudimos nos fuimos.
 
@@ -27,7 +27,7 @@ Llegamos aquí el 4 de septiembre. Fue una experiencia un poco rara, pedimos sol
 
 Después de un mes en el AirBnB, encontramos nuestro propio piso que tenemos alquilado por al menos un año. Con eso me puse mucho más tranquila, porque era el primer paso para conseguir el empadronamiento (es decir, un documento que prueba que vives en España y en qué región vives) y después la residencia que para mí, desde que no voy a ser ciudadana europea después de enero, tengo que conseguir de alguna manera. Pero ya dije que no voy a hablar de todo eso.
 
-![La terraza bonita en el AirBnB donde nos quedamos el primer mes](./img/terraza.png)
+![La bonita terraza en el AirBnB donde nos quedamos el primer mes](./img/terraza.png)
 
 Ya han pasado siete semanas aquí. Parece más tiempo. Cuando muchas cosas pasan en poco tiempo y tienes muchas experiencias nuevas, siempre es así, ¿no? Que los días parecen más largos y las semanas parecen meses. Tal vez es eso, el secreto de vivir una vida muy larga.
 
