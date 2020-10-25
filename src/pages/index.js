@@ -10,80 +10,15 @@ import talk from "../img/talk.jpg";
 import teaching from "../img/codebar.png";
 import nc from "../img/5.jpg";
 import techreturners from "../img/returners.jpeg";
-import { generalCategories, technicalCategories } from "../models/categories";
-import PostLink from "../components/PostLink";
+import { PostDate } from "../components/shared/styled";
 import WelcomeSection from "../components/WelcomeSection";
+import EducatorSection from "../components/EducatorSection";
 import "milligram";
 import "./index.css";
 
-import EducatorSection from "../components/EducatorSection";
-
-const PostsGridContainer = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-row-gap: 0px;
-  grid-column-gap: 30px;
-  @media (max-width: 1020px) {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  }
-  @media (max-width: 700px) {
-    display: none;
-  }
-`;
-
-const PostsSingleListContainer = styled.div`
-  @media (min-width: 701px) {
-    display: none;
-  }
-`;
-
-const PostsList = styled.ul`
-  flex-grow: 1;
-  height: 100%;
-  background: oldlace;
-  padding: 25px 7px;
-  border-radius: 9px;
-  .with-border {
-    border-right: 1px solid lightgray;
-  }
-  li {
-    margin-bottom: 30px;
-  }
-  @media (max-width: 1020px) {
-    padding: 25px;
-  }
-`;
-
-const PostEmoji = styled.span`
-  padding: 0 10px;
-  text-decoration: none;
-  font-size: 26px;
-  @media (max-width: 1155px) {
-    font-size: 16px;
-  }
-`;
-
-const PostHeading = styled.h5`
-  font-size: 20px;
-  margin-left: 20px;
-  @media (max-width: 1155px) {
-    font-size: 16px;
-  }
-`;
-
-const PostTitle = styled.span`
-  text-decoration: underline;
-  text-decoration-style: wavy;
-  -moz-text-decoration-style: wavy;
-  -webkit-text-decoration-style: wavy;
-  text-decoration-color: lightseagreen;
-`;
-
-const GridItem = styled.div`
-  display: flex;
-  flex-direction: column;
+const Description = styled.p`
+  font-style: italic;
+  font-size: 0.8em;
 `;
 
 const WiderOnMobile = styled.div`
@@ -94,29 +29,7 @@ const WiderOnMobile = styled.div`
 `;
 
 const IndexPage = ({ data }) => {
-  const generalCategoryKeys = Object.keys(generalCategories);
-  const techCategoryKeys = Object.keys(technicalCategories);
-  const generalPostsByCategory = {};
-  const technicalPostsByCategory = {};
-  data.blogposts.edges.forEach((post) => {
-    const category = post.node.frontmatter.category;
-    const isGeneral = generalCategoryKeys.includes(category);
-    const isTechnical =
-      post.node.frontmatter.technical && techCategoryKeys.includes(category);
-    if (isGeneral) {
-      if (generalPostsByCategory[category]) {
-        generalPostsByCategory[category].push(post);
-      } else {
-        generalPostsByCategory[category] = [post];
-      }
-    } else if (isTechnical) {
-      if (technicalPostsByCategory[category]) {
-        technicalPostsByCategory[category].push(post);
-      } else {
-        technicalPostsByCategory[category] = [post];
-      }
-    }
-  });
+  const posts = data.blogposts.edges;
 
   return (
     <Layout>
@@ -133,61 +46,18 @@ const IndexPage = ({ data }) => {
           <div className="row">
             <div className="column column-80" style={{ margin: "auto" }}>
               <h3>writing</h3>
-            </div>
-          </div>
-          <div className="row">
-            <div className="column column-95" style={{ margin: "auto" }}>
-              <PostsGridContainer>
-                {[
-                  {
-                    keys: techCategoryKeys,
-                    posts: technicalPostsByCategory,
-                    allCategories: technicalCategories,
-                  },
-                  {
-                    keys: generalCategoryKeys,
-                    posts: generalPostsByCategory,
-                    allCategories: generalCategories,
-                  },
-                ].map((postType) =>
-                  postType.keys.map((categoryKey, i) => {
-                    return (
-                      <GridItem key={categoryKey}>
-                        <PostHeading>
-                          <PostTitle>
-                            {postType.allCategories[categoryKey].title}
-                          </PostTitle>
-                          <PostEmoji>
-                            {postType.allCategories[categoryKey].emoji}
-                          </PostEmoji>
-                        </PostHeading>
-                        <PostsList className={i < 2 && "with-border"}>
-                          {postType.posts[categoryKey] ? (
-                            postType.posts[categoryKey].slice(0, 5).map((p) => {
-                              return (
-                                <PostLink
-                                  post={p}
-                                  key={p.node.frontmatter.title}
-                                />
-                              );
-                            })
-                          ) : (
-                            <p>No posts in this category 😢</p>
-                          )}
-                        </PostsList>
-                      </GridItem>
-                    );
-                  })
-                )}
-              </PostsGridContainer>
-              <PostsSingleListContainer>
-                <ul>
-                  {data.blogposts.edges.slice(0, 10).map((p) => {
-                    return <PostLink post={p} key={p.node.frontmatter.title} />;
-                  })}
-                </ul>
-              </PostsSingleListContainer>
-              (<Link to="/blog">See all</Link>)
+              {posts.map(({ node }, i) => {
+                return (
+                  <p key={i}>
+                    <Link to={node.fields.slug}>{node.frontmatter.title}</Link>
+                    <PostDate>({node.frontmatter.date})</PostDate>
+                    <Description>{node.frontmatter.description}</Description>
+                  </p>
+                );
+              })}
+              <p>
+                (<Link to="/blog">See all</Link>)
+              </p>
             </div>
           </div>
         </section>
@@ -402,8 +272,9 @@ IndexPage.propTypes = {
 export const query = graphql`
   query {
     blogposts: allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "/blog/|/external-posts/" } }
+      filter: { fileAbsolutePath: { regex: "/blog/" } }
       sort: { fields: [frontmatter___date], order: DESC }
+      limit: 8
     ) {
       edges {
         node {
@@ -414,10 +285,6 @@ export const query = graphql`
             title
             date(formatString: "Do MMM, YYYY")
             description
-            category
-            technical
-            url
-            platform
           }
         }
       }
