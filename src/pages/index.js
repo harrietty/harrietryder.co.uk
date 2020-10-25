@@ -122,7 +122,10 @@ const IndexPage = ({ data }) => {
     <Layout>
       <div className="container">
         <div className="row">
-          <WiderOnMobile className="column column-80" style={{ margin: "auto" }}>
+          <WiderOnMobile
+            className="column column-80"
+            style={{ margin: "auto" }}
+          >
             <WelcomeSection />
           </WiderOnMobile>
         </div>
@@ -335,15 +338,9 @@ const IndexPage = ({ data }) => {
                 <p>
                   I have given an{" "}
                   <span className="stronger">Introduction to JavaScript</span>{" "}
-                  workshops at various events, including the{" "}
-                  <a
-                    href="https://www.codefirstgirls.org.uk/northern-conference-2018.html"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    CodeFirst:Girls 2018 Northern Conference
-                  </a>{" "}
-                  and CodeUp. Thank you for having me! More like this please{" "}
+                  workshops at various events, including the CodeFirst:Girls
+                  2018 Northern Conference and CodeUp. Thank you for having me!
+                  More like this please{" "}
                   <span role="img" aria-label="praying hands">
                     🙏
                   </span>{" "}

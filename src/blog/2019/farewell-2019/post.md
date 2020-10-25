@@ -27,7 +27,7 @@ Early in the year I led a <a href="https://www.codefirstgirls.org.uk/" target="_
 
 ![A few moments from teaching in 2019](./img/teaching.jpg)
 
-This year I've felt really privileged to get to work with so many inspiring people who are making their way into tech, or returning to tech. I've taught in quite a few different places, and delivered different courses, and the <a href="https://www.techreturners.com/your-journey-into-tech/" target="_blank">Your Journey Into Tech course</a> is one of the best - well orchestrated, challenging whilst also supportive, and delivered by people who care! Check us out if you're thinking about a career in tech, or know someone who is 😊
+This year I've felt really privileged to get to work with so many inspiring people who are making their way into tech, or returning to tech. I've taught in quite a few different places, and delivered different courses, and the <a href="https://www.techreturners.com/programmes/your-return-to-tech" target="_blank">Your Return To Tech course</a> is one of the best - well orchestrated, challenging whilst also supportive, and delivered by people who care! Check us out if you're thinking about a career in tech, or know someone who is 😊
 
 Mauro and I managed to fit in a trip to Spain in the Spring, one of our only two trips away this year. We've worked too much these last 12 months! In May we visited Valencia for a few days, where we got a much needed dose of sun and sea and family after a pretty rubbish Spring in the UK.
 
